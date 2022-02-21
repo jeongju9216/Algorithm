@@ -14,11 +14,13 @@ func solution(_ id_list:[String], _ report:[String], _ k:Int) -> [Int] {
     var reportDicts: [String:[String]] = [:]
     var ids: [String:Int] = [:] //index를 저장하기 위한 딕셔너리
     
+    //초기화
     for (index, id) in id_list.enumerated() {
         ids[id] = index
         reportDicts[id] = []
     }
     
+    //신고 당한 사람 : 신고한 사람
     for report in reports {
         let splitItem = report.split(separator: " ")
         let reporter = String(splitItem.first!)
@@ -28,6 +30,7 @@ func solution(_ id_list:[String], _ report:[String], _ k:Int) -> [Int] {
     }
 //    print("reportDicts: \(reportDicts)")
     
+    //reportDicts을 기반으로 count 증가
     for name in ids.keys {
         let reporters = reportDicts[name]!
         if reporters.count >= k {
