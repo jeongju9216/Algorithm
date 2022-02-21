@@ -53,5 +53,5 @@ func solution(_ new_id:String) -> String {
     return result
 }
 
-let new_id = "...!@BaT#*..y.abcdefghijklm"
+let new_id = "...!@BaT#*..y.abcdefghijklm" //"a...a"//"......a......a......a....."
 print(solution(new_id))
