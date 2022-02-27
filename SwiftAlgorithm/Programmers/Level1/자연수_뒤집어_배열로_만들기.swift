@@ -8,5 +8,6 @@
 import Foundation
 
 func solution(_ n:Int64) -> [Int] {
+//    return String(n).reversed().map { Int(String($0))! }
     return String(n).reversed().compactMap { Int(String($0)) }
 }
