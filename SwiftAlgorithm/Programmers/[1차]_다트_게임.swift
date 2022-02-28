@@ -5,54 +5,25 @@
 //  Created by 유정주 on 2022/02/27.
 //
 
-import Foundation
-
 func solution(_ dartResult:String) -> Int {
-    var scores: [Int] = []
-    var stacks: [String] = []
+    var scores = dartResult.split(whereSeparator: { !$0.isNumber }).compactMap { Int($0) }
+    let letters = dartResult.split(whereSeparator: { $0.isNumber })
     
-    for n in dartResult {
-        if n.isNumber {
-            stacks.append(String(n))
-        } else {
-            var numString = ""
-            while true {
-                guard let top = stacks.last, let _ = Int(top) else {
-                    break
-                }
-                
-                stacks.removeLast()
-                numString += top
-            }
-
-            if numString.isEmpty {
-                if let top = stacks.popLast() {
-                    stacks.append(top + String(n))
-                }
-            } else {
-                stacks.append(String(n))
-                scores.append(Int(String(numString.reversed()))!)
-            }
-        }
-    }
-    
-    for (index, stack) in stacks.enumerated() {
-
-        stack.forEach {
+    for (index, letter) in letters.enumerated() {
+        letter.forEach {
+            let score = scores[index]
             switch $0 {
-            case "S":
-                scores[index] = Int(pow(Double(scores[index]), 1))
             case "D":
-                scores[index] = Int(pow(Double(scores[index]), 2))
+                scores[index] = score * score
             case "T":
-                scores[index] = Int(pow(Double(scores[index]), 3))
+                scores[index] = score * score * score
             case "*":
-                scores[index] = 2 * scores[index]
+                scores[index] = 2 * score
                 if index - 1 >= 0 {
                     scores[index - 1] = 2 * scores[index - 1]
                 }
             case "#":
-                scores[index] = -(scores[index])
+                scores[index] = -score
             default:
                 break
             }
@@ -62,5 +33,5 @@ func solution(_ dartResult:String) -> Int {
     return scores.reduce(0, +)
 }
 
-let dartResult = "1D2S#10S"
+let dartResult = "1D2S#10S*"
 print(solution(dartResult))
