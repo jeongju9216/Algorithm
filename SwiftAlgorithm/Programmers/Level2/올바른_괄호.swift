@@ -11,16 +11,16 @@ import Foundation
 func solution(_ s:String) -> Bool
 {
     var ans:Bool = false
-    var stack: [String] = []
+    var stack: [Character] = []
     
-    s.forEach {
-        if $0 == "(" {
-            stack.append(String($0))
+    for letter in s {
+        if letter == "(" {
+            stack.append(letter)
         } else {
             if let top = stack.last, top == "(" {
                 stack.popLast()
             } else {
-                stack.append(String($0))
+                return false
             }
         }
     }
@@ -29,5 +29,5 @@ func solution(_ s:String) -> Bool
     return ans
 }
 
-let s = "(())))"
+let s = "))(("
 print(solution(s))
