@@ -5,6 +5,7 @@
 //  Created by 유정주 on 2022/03/02.
 //
 
+//10828 스택
 import Foundation
 
 let loopCount = Int(readLine()!)!
