@@ -9,7 +9,7 @@ import Foundation
 
 func solution(_ s:String) -> String {
     
-    let nums: [Int] = s.split(separator: " ").map { Int($0)! }.sorted()
+    let nums: [Int] = s.split(separator: " ").map { Int($0)! }
     
     let result = "\(nums.min()!) \(nums.max()!)"
     
