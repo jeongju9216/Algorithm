@@ -8,7 +8,6 @@
 import Foundation
 
 func solution(_ n:Int, _ computers:[[Int]]) -> Int {
-    
     //그래프 만들기
     var graph: [Int: [Int]] = [:]
     var computerCount = 0
