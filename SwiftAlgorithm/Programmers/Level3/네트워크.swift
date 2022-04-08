@@ -8,26 +8,11 @@
 import Foundation
 
 func solution(_ n:Int, _ computers:[[Int]]) -> Int {
-    //그래프 만들기
-    var graph: [Int: [Int]] = [:]
-    var computerCount = 0
-    for computer in computers {
-        graph.updateValue([], forKey: computerCount)
-        
-        for i in 0..<computer.count {
-            if i != computerCount && computer[i] == 1 {
-                graph[computerCount]?.append(i)
-            }
-        }
-        
-        computerCount+=1
-    }
-    
     //dfs
     var stack: [Int] = []
-    var visited: [Bool] = Array(repeating: false, count: computerCount)
+    var visited: [Bool] = Array(repeating: false, count: n)
     var result = 0
-    for i in 0..<computerCount {
+    for i in 0..<n {
         if !visited[i] {
             result += 1 //네트워크 카운트
             stack.append(i)
@@ -36,9 +21,9 @@ func solution(_ n:Int, _ computers:[[Int]]) -> Int {
                 let top = stack.popLast()!
                 visited[top] = true
                 
-                for node in graph[top]! {
-                    if !visited[node] {
-                        stack.append(node)
+                for j in 0..<n {
+                    if j != top && computers[top][j] == 1 && !visited[j] {
+                        stack.append(j)
                     }
                 }
             }
