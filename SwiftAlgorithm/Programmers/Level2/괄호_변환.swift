@@ -1,5 +1,5 @@
 //
-//  괄호_변환.swift
+//  괄효_변환.swift
 //  SwiftAlgorithm
 //
 //  Created by 유정주 on 2022/04/08.
