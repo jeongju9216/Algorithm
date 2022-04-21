@@ -9,13 +9,14 @@ import Foundation
 
 let MULTIPLE: Double = 65536.0
 
-func createStrSet(_ strs: [String]) -> [String] {
+func createStrArray(_ str: String) -> [String] {
     let alphabet = "abcdefghijklmnopqrstuvwxyz"
-
+    let str = Array(str).map { String($0) }
+    
     var results: [String] = []
-    for i in 0..<strs.count-1 {
-        let ch1 = strs[i].lowercased()
-        let ch2 = strs[i+1].lowercased()
+    for i in 0..<str.count-1 {
+        let ch1 = str[i].lowercased()
+        let ch2 = str[i+1].lowercased()
         guard alphabet.contains(ch1), alphabet.contains(ch2) else {
             continue
         }
@@ -30,13 +31,10 @@ func createIntersection(_ arr1: [String], _ arr2: [String]) -> [String] {
     var result: [String] = []
     
     var temp = arr2
-    for item1 in arr1 {
-        for (i, item2) in temp.enumerated() {
-            if item1 == item2 {
-                temp.remove(at: i)
-                result.append(item1)
-                break
-            }
+    arr1.forEach {
+        if let index = temp.firstIndex(of: $0) {
+            temp.remove(at: index)
+            result.append($0)
         }
     }
     
@@ -47,15 +45,12 @@ func createUnion(_ arr1: [String], _ arr2: [String]) -> [String] {
     var result: [String] = []
     
     var temp = arr2
-    for item1 in arr1 {
-        result.append(item1)
-        for (i, item2) in temp.enumerated() {
-            if item1 == item2 {
-                temp.remove(at: i)
-                break
-            }
+    arr1.forEach {
+        if let index = temp.firstIndex(of: $0) {
+            temp.remove(at: index)
         }
     }
+    result.append(contentsOf: arr1)
     result.append(contentsOf: temp)
     
     return result
@@ -63,23 +58,15 @@ func createUnion(_ arr1: [String], _ arr2: [String]) -> [String] {
 }
 
 func solution(_ str1:String, _ str2:String) -> Int {
-    var result: Double = 0.0
+    var result: Double = 1.0
     
-    let str1 = Array(str1).map { String($0) }
-    let str2 = Array(str2).map { String($0) }
+    let str1Arr: [String] = createStrArray(str1)
+    let str2Arr: [String] = createStrArray(str2)
     
-    let str1Arr: [String] = createStrSet(str1)
-    let str2Arr: [String] = createStrSet(str2)
+    let intersection: [String] = createIntersection(str1Arr, str2Arr) //교집합
+    let union: [String] = createUnion(str1Arr, str2Arr) //합집합
     
-    var intersection: [String] = createIntersection(str1Arr, str2Arr) //교집합
-    var union: [String] = createUnion(str1Arr, str2Arr) //합집합
-    
-    // print("intersection: \(intersection)")
-    // print("union: \(union)")
-    
-    if intersection.isEmpty && union.isEmpty {
-        result = 1.0
-    } else {
+    if !(intersection.isEmpty && union.isEmpty) {
         result = Double(intersection.count) / Double(union.count)
     }
     
