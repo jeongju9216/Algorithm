@@ -44,6 +44,7 @@ func solution(_ relation:[[String]]) -> Int {
     var candidateKeys: [[Int]] = []
     for combination in combinations {
         for combination2 in combination {
+            //최소성 판단
             let set = Set(combination2)
             var isMinimal = true
             for key in candidateKeys {
@@ -70,7 +71,6 @@ func solution(_ relation:[[String]]) -> Int {
                 }
             }
             
-            //최소성 판단
             if dict.count == tupleCount {
                 candidateKeys.append(combination2)
             }
