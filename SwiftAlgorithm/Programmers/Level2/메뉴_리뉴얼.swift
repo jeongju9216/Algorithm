@@ -27,20 +27,20 @@ func makeOrder(_ string: [String], _ length: Int) -> [String] {
 }
 
 func solution(_ orders:[String], _ course:[Int]) -> [String] {
-    // let orders = ["ABCD", "ABCD", "ABCD"]
-    // let course = [2,3,4]
-    
     var result: [String] = []
     
-    let courseRange = (course.first!...course.last!)
+    let courseRange = (course.first!...course.last!) //가장 적은 개수 ~ 가장 많은 개수
     
+    //코스 요리 개수 : 코스 종류
     var orderCombinations: [Int:[String]] = [:]
     courseRange.forEach { orderCombinations[$0] = [] }
     
     orders.forEach { order in
+        //주문 요리를 정렬합니다. XY, YX는 같은 코스
         let orderArr = Array(order).sorted(by: <).map { String($0) }
         
         courseRange.forEach {
+            //각 개수마다 만들 수 있는 코스 요리를 구한다.
             let orderCombination = makeOrder(orderArr, $0)
             for od in orderCombination {
                 orderCombinations[$0]?.append(od)
@@ -49,6 +49,7 @@ func solution(_ orders:[String], _ course:[Int]) -> [String] {
     }
     // print("orderCombinations: \(orderCombinations)")
     
+    //요리를 주문한 횟수를 구합니다.
     var orderCount: [String: Int] = [:]
     courseRange.forEach { i in
         for order in orderCombinations[i]! {
@@ -57,6 +58,7 @@ func solution(_ orders:[String], _ course:[Int]) -> [String] {
     }
     // print("orderCount: \(orderCount)")
     
+    //각 요리 개수에 대해 가장 많이 주문한 횟수를 저장한다.
     var maxCounts: [Int: Int] = [:]
     courseRange.forEach { maxCounts[$0] = 0 }
     orderCount.forEach  {
@@ -64,15 +66,16 @@ func solution(_ orders:[String], _ course:[Int]) -> [String] {
     }
     print("maxCounts: \(maxCounts)")
     
+    //2회 이상 주문한 요리 중 가장 많이 주문한 요리로만 코스를 구성한다.
     for order in orderCount {
-        if course.contains(order.key.count) {
-            if let maxCount = maxCounts[order.key.count],
-                order.value > 1, order.value == maxCount {
+        if course.contains(order.key.count) { //원하는 코스 요리 개수
+            if let maxCount = maxCounts[order.key.count], //가장 많이 주문한 횟수
+                order.value > 1, order.value == maxCount { //1회 이상, 가장 많이 주문한 요리면 append
                 result.append(order.key)
             }
         }
     }
-    result.sort(by: <)
+    result.sort(by: <) //사전순으로 정렬
     print("result: \(result)")
     
     return result
