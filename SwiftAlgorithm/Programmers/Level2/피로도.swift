@@ -35,16 +35,14 @@ func solution(_ k:Int, _ dungeons:[[Int]]) -> Int {
     
     var result = 0
     combination.forEach {
-        var k = k
+        var k = k, count = 0
         
-        let count = $0.map {
-            if k >= dungeons[$0][0] {
-                k -= dungeons[$0][1]
-                return 1
-            } else {
-                return -1
-            }
-        }.filter { $0 > 0 }.count
+        for index in $0 {
+            guard k >= dungeons[index][0] else { break }
+            
+            k -= dungeons[index][1]
+            count += 1
+        }
         
         result = max(result, count)
     }
