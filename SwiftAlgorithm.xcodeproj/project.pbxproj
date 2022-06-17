@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B7D6796285C90BA0094C304 /* CyclicRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D6795285C90BA0094C304 /* CyclicRotation.swift */; };
-		9B7D6798285CAB620094C304 /* OddOccurrencesInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D6797285CAB620094C304 /* OddOccurrencesInArray.swift */; };
-		9B7D679A285CB9E80094C304 /* FrogJmp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D6799285CB9E80094C304 /* FrogJmp.swift */; };
-		9B7D679C285CBC240094C304 /* PermMissingElem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D679B285CBC240094C304 /* PermMissingElem.swift */; };
 		9B7E6BBA2849F33000C5EFD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E6BB92849F33000C5EFD0 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +30,7 @@
 		9B7D6797285CAB620094C304 /* OddOccurrencesInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddOccurrencesInArray.swift; sourceTree = "<group>"; };
 		9B7D6799285CB9E80094C304 /* FrogJmp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogJmp.swift; sourceTree = "<group>"; };
 		9B7D679B285CBC240094C304 /* PermMissingElem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermMissingElem.swift; sourceTree = "<group>"; };
+		9B7D679D285CD2620094C304 /* TapeEquilibrium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeEquilibrium.swift; sourceTree = "<group>"; };
 		9B7E6BB92849F33000C5EFD0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B85378F283A0C7E00643BEE /* IntegerParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerParsing.swift; sourceTree = "<group>"; };
 		9BC9C08A282C862E0038396E /* loopTimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loopTimeTest.swift; sourceTree = "<group>"; };
@@ -86,6 +83,7 @@
 				9B7D6797285CAB620094C304 /* OddOccurrencesInArray.swift */,
 				9B7D6799285CB9E80094C304 /* FrogJmp.swift */,
 				9B7D679B285CBC240094C304 /* PermMissingElem.swift */,
+				9B7D679D285CD2620094C304 /* TapeEquilibrium.swift */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
@@ -160,10 +158,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B7E6BBA2849F33000C5EFD0 /* main.swift in Sources */,
-				9B7D679C285CBC240094C304 /* PermMissingElem.swift in Sources */,
-				9B7D679A285CB9E80094C304 /* FrogJmp.swift in Sources */,
-				9B7D6798285CAB620094C304 /* OddOccurrencesInArray.swift in Sources */,
-				9B7D6796285C90BA0094C304 /* CyclicRotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
