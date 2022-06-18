@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9B7D67A4285D74160094C304 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67A3285D74160094C304 /* MaxCounters.swift */; };
 		9B7D67AA285DACF60094C304 /* CountDiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67A9285DACF60094C304 /* CountDiv.swift */; };
-		9B7D67AE285E0F270094C304 /* MinAvgTwoSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67AD285E0F270094C304 /* MinAvgTwoSlice.swift */; };
 		9B7E6BBA2849F33000C5EFD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E6BB92849F33000C5EFD0 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -179,7 +178,6 @@
 				9B7E6BBA2849F33000C5EFD0 /* main.swift in Sources */,
 				9B7D67A4285D74160094C304 /* MaxCounters.swift in Sources */,
 				9B7D67AA285DACF60094C304 /* CountDiv.swift in Sources */,
-				9B7D67AE285E0F270094C304 /* MinAvgTwoSlice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
