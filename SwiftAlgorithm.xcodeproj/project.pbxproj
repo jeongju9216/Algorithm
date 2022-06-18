@@ -31,6 +31,7 @@
 		9B7D6799285CB9E80094C304 /* FrogJmp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogJmp.swift; sourceTree = "<group>"; };
 		9B7D679B285CBC240094C304 /* PermMissingElem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermMissingElem.swift; sourceTree = "<group>"; };
 		9B7D679D285CD2620094C304 /* TapeEquilibrium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeEquilibrium.swift; sourceTree = "<group>"; };
+		9B7D679F285D5BB10094C304 /* FrogRiverOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogRiverOne.swift; sourceTree = "<group>"; };
 		9B7E6BB92849F33000C5EFD0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B85378F283A0C7E00643BEE /* IntegerParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerParsing.swift; sourceTree = "<group>"; };
 		9BC9C08A282C862E0038396E /* loopTimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loopTimeTest.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 				9B7D6799285CB9E80094C304 /* FrogJmp.swift */,
 				9B7D679B285CBC240094C304 /* PermMissingElem.swift */,
 				9B7D679D285CD2620094C304 /* TapeEquilibrium.swift */,
+				9B7D679F285D5BB10094C304 /* FrogRiverOne.swift */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
