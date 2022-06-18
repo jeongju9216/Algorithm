@@ -35,6 +35,7 @@
 		9B7D679F285D5BB10094C304 /* FrogRiverOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogRiverOne.swift; sourceTree = "<group>"; };
 		9B7D67A1285D6CE80094C304 /* PermCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermCheck.swift; sourceTree = "<group>"; };
 		9B7D67A3285D74160094C304 /* MaxCounters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxCounters.swift; sourceTree = "<group>"; };
+		9B7D67A5285D7E3A0094C304 /* MissingInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingInteger.swift; sourceTree = "<group>"; };
 		9B7E6BB92849F33000C5EFD0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B85378F283A0C7E00643BEE /* IntegerParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerParsing.swift; sourceTree = "<group>"; };
 		9BC9C08A282C862E0038396E /* loopTimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loopTimeTest.swift; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 				9B7D679F285D5BB10094C304 /* FrogRiverOne.swift */,
 				9B7D67A1285D6CE80094C304 /* PermCheck.swift */,
 				9B7D67A3285D74160094C304 /* MaxCounters.swift */,
+				9B7D67A5285D7E3A0094C304 /* MissingInteger.swift */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
