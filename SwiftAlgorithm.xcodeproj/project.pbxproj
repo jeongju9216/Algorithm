@@ -42,6 +42,7 @@
 		9B7D67AB285DD0640094C304 /* GenomicRangeQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomicRangeQuery.swift; sourceTree = "<group>"; };
 		9B7D67AD285E0F270094C304 /* MinAvgTwoSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinAvgTwoSlice.swift; sourceTree = "<group>"; };
 		9B7D67AF285E9F0C0094C304 /* Distinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distinct.swift; sourceTree = "<group>"; };
+		9B7D67B1285E9F3D0094C304 /* MaxProductOfThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxProductOfThree.swift; sourceTree = "<group>"; };
 		9B7E6BB92849F33000C5EFD0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B85378F283A0C7E00643BEE /* IntegerParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerParsing.swift; sourceTree = "<group>"; };
 		9BC9C08A282C862E0038396E /* loopTimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loopTimeTest.swift; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 				9B7D67AB285DD0640094C304 /* GenomicRangeQuery.swift */,
 				9B7D67AD285E0F270094C304 /* MinAvgTwoSlice.swift */,
 				9B7D67AF285E9F0C0094C304 /* Distinct.swift */,
+				9B7D67B1285E9F3D0094C304 /* MaxProductOfThree.swift */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
