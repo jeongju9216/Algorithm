@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B7D67A4285D74160094C304 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67A3285D74160094C304 /* MaxCounters.swift */; };
 		9B7D67AA285DACF60094C304 /* CountDiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67A9285DACF60094C304 /* CountDiv.swift */; };
+		9BD5296E2876729F008B1340 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD5296D2876729F008B1340 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,7 @@
 		9B85378F283A0C7E00643BEE /* IntegerParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerParsing.swift; sourceTree = "<group>"; };
 		9BC9C08A282C862E0038396E /* loopTimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loopTimeTest.swift; sourceTree = "<group>"; };
 		9BC9C08E282DF23B0038396E /* nil-filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "nil-filter.swift"; sourceTree = "<group>"; };
+		9BD5296D2876729F008B1340 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				9BC9C089282C86070038396E /* Test */,
 				9B6CF92127C3301A007384B2 /* BOJ */,
 				9B6CF92027C3301A007384B2 /* Programmers */,
+				9BD5296D2876729F008B1340 /* main.swift */,
 			);
 			path = SwiftAlgorithm;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				9B7D67A4285D74160094C304 /* MaxCounters.swift in Sources */,
 				9B7D67AA285DACF60094C304 /* CountDiv.swift in Sources */,
+				9BD5296E2876729F008B1340 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
