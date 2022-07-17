@@ -7,21 +7,44 @@
 
 import Foundation
 
-struct PersonS {
-    var name: String = "시리"
+class Class2 {
+
+    var handler: ((Int) -> Void)? = nil
+    
+    func format(_ value: Int) -> String { return String(value) }
+
+    func test() {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) { [weak self] in
+            let formatted = self?.format(10)
+            print("formatted: \(formatted as Any)")
+        }
+    }
+
+    deinit {
+        print("Class2 deinit")
+    }
 }
 
-class PersonC {
-    var name: String = "시리"
-    var person: PersonS = PersonS()
+class Class1 {
+    let class2: Class2
+
+    init() {
+        class2 = Class2()
+    }
+
+    func someEvent() {
+        class2.test()
+    }
+
+    deinit {
+        print("Class1 deinit")
+    }
 }
 
-let person1: PersonC = PersonC()
-var person2 = person1
-var person3 = person1
+var class1: Class1? = Class1() // 1
+class1?.someEvent() // 2
+class1 = nil // 3
 
-person3.person.name = "팀쿡"
-
-print("person1 name: \(person1.person.name)")
-print("person2 name: \(person2.person.name)")
-print("person3 name: \(person3.person.name)")
+while (true) {
+    
+}
