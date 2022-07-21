@@ -7,44 +7,56 @@
 
 import Foundation
 
-class Class2 {
+func address(of object: UnsafeRawPointer) -> String {
+    let address = Int(bitPattern: object)
+    return String(format: "%p", address)
+}
 
-    var handler: ((Int) -> Void)? = nil
+func dumpInt() {
+    print("\n----- dumpInt() -----")
     
-    func format(_ value: Int) -> String { return String(value) }
-
-    func test() {
-        DispatchQueue.global().asyncAfter(deadline: .now() + 1) { [weak self] in
-            let formatted = self?.format(10)
-            print("formatted: \(formatted as Any)")
-        }
-    }
-
-    deinit {
-        print("Class2 deinit")
-    }
-}
-
-class Class1 {
-    let class2: Class2
-
-    init() {
-        class2 = Class2()
-    }
-
-    func someEvent() {
-        class2.test()
-    }
-
-    deinit {
-        print("Class1 deinit")
-    }
-}
-
-var class1: Class1? = Class1() // 1
-class1?.someEvent() // 2
-class1 = nil // 3
-
-while (true) {
+    var intValue: Int = 10
+    print("Int(\(MemoryLayout.size(ofValue: intValue)))")
+    print("intValue: \(address(of: &intValue))")
     
+    var copyInt: Int = intValue
+    print("copyInt: \(address(of: &copyInt))")
+    print("--------------------")
 }
+
+func dumpIntArray() {
+    print("\n----- dumpIntArray() -----")
+    
+    var array: [Int] = [1, 2, 3]
+    var array2 = array
+    print("Array(\(MemoryLayout.size(ofValue: array)))")
+    print("\(address(of: &array))")
+    print("\(address(of: &array2))")
+    
+    array2.append(1)
+    
+    print("----- After Append -----")
+    print("\(address(of: &array))")
+    print("\(address(of: &array2))")
+    print("--------------------")
+}
+
+func dumpCollection() {
+    var dict: Dictionary = [0: 0]
+    var setValue: Set = [1, 2, 3]
+    
+    print("Dictionary: \(address(of: &dict))")
+    print("Set: \(address(of: &setValue))")
+}
+
+func dumpString() {
+    var str: String = "Hello"
+    var str2: String = str
+    
+    print("String(\(MemoryLayout.size(ofValue: str)))")
+    print("str: \(address(of: &str))")
+    print("str2: \(address(of: &str2))")
+}
+
+
+dumpString()
