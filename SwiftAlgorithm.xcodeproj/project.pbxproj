@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		9B7D67A4285D74160094C304 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67A3285D74160094C304 /* MaxCounters.swift */; };
 		9B7D67AA285DACF60094C304 /* CountDiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67A9285DACF60094C304 /* CountDiv.swift */; };
-		9B90AB322890DA54004B2A06 /* Deci-BinaryNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B90AB312890DA54004B2A06 /* Deci-BinaryNumbers.swift */; };
-		9BD5296E2876729F008B1340 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD5296D2876729F008B1340 /* TwoSum.swift */; };
+		9B90AB322890DA54004B2A06 /* 1689.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B90AB312890DA54004B2A06 /* 1689.swift */; };
+		9B90AB352890F057004B2A06 /* 1108.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B90AB342890F057004B2A06 /* 1108.swift */; };
+		9B90AB372890F229004B2A06 /* 2011.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B90AB362890F229004B2A06 /* 2011.swift */; };
+		9B90AB392890F3D8004B2A06 /* 2236.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B90AB382890F3D8004B2A06 /* 2236.swift */; };
+		9BD5296E2876729F008B1340 /* 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD5296D2876729F008B1340 /* 1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,8 +48,11 @@
 		9B7D67AF285E9F0C0094C304 /* Distinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distinct.swift; sourceTree = "<group>"; };
 		9B7D67B1285E9F3D0094C304 /* MaxProductOfThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxProductOfThree.swift; sourceTree = "<group>"; };
 		9B7D67B2285EA6440094C304 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
-		9B90AB312890DA54004B2A06 /* Deci-BinaryNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deci-BinaryNumbers.swift"; sourceTree = "<group>"; };
-		9BD5296D2876729F008B1340 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
+		9B90AB312890DA54004B2A06 /* 1689.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1689.swift; sourceTree = "<group>"; };
+		9B90AB342890F057004B2A06 /* 1108.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1108.swift; sourceTree = "<group>"; };
+		9B90AB362890F229004B2A06 /* 2011.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2011.swift; sourceTree = "<group>"; };
+		9B90AB382890F3D8004B2A06 /* 2236.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2236.swift; sourceTree = "<group>"; };
+		9BD5296D2876729F008B1340 /* 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +128,10 @@
 		9B90AB302890CCDB004B2A06 /* Easy */ = {
 			isa = PBXGroup;
 			children = (
-				9BD5296D2876729F008B1340 /* TwoSum.swift */,
+				9BD5296D2876729F008B1340 /* 1.swift */,
+				9B90AB342890F057004B2A06 /* 1108.swift */,
+				9B90AB362890F229004B2A06 /* 2011.swift */,
+				9B90AB382890F3D8004B2A06 /* 2236.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -130,7 +139,7 @@
 		9B90AB332890E589004B2A06 /* Medium */ = {
 			isa = PBXGroup;
 			children = (
-				9B90AB312890DA54004B2A06 /* Deci-BinaryNumbers.swift */,
+				9B90AB312890DA54004B2A06 /* 1689.swift */,
 			);
 			path = Medium;
 			sourceTree = "<group>";
@@ -195,9 +204,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B7D67A4285D74160094C304 /* MaxCounters.swift in Sources */,
+				9B90AB352890F057004B2A06 /* 1108.swift in Sources */,
+				9B90AB372890F229004B2A06 /* 2011.swift in Sources */,
 				9B7D67AA285DACF60094C304 /* CountDiv.swift in Sources */,
-				9B90AB322890DA54004B2A06 /* Deci-BinaryNumbers.swift in Sources */,
-				9BD5296E2876729F008B1340 /* TwoSum.swift in Sources */,
+				9B90AB392890F3D8004B2A06 /* 2236.swift in Sources */,
+				9B90AB322890DA54004B2A06 /* 1689.swift in Sources */,
+				9BD5296E2876729F008B1340 /* 1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
