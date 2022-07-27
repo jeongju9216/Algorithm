@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		9B7D67A4285D74160094C304 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67A3285D74160094C304 /* MaxCounters.swift */; };
 		9B7D67AA285DACF60094C304 /* CountDiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67A9285DACF60094C304 /* CountDiv.swift */; };
-		9BD5296E2876729F008B1340 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD5296D2876729F008B1340 /* main.swift */; };
+		9B90AB322890DA54004B2A06 /* Deci-BinaryNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B90AB312890DA54004B2A06 /* Deci-BinaryNumbers.swift */; };
+		9BD5296E2876729F008B1340 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD5296D2876729F008B1340 /* TwoSum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,10 +45,8 @@
 		9B7D67AF285E9F0C0094C304 /* Distinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distinct.swift; sourceTree = "<group>"; };
 		9B7D67B1285E9F3D0094C304 /* MaxProductOfThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxProductOfThree.swift; sourceTree = "<group>"; };
 		9B7D67B2285EA6440094C304 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
-		9B85378F283A0C7E00643BEE /* IntegerParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerParsing.swift; sourceTree = "<group>"; };
-		9BC9C08A282C862E0038396E /* loopTimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loopTimeTest.swift; sourceTree = "<group>"; };
-		9BC9C08E282DF23B0038396E /* nil-filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "nil-filter.swift"; sourceTree = "<group>"; };
-		9BD5296D2876729F008B1340 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9B90AB312890DA54004B2A06 /* Deci-BinaryNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deci-BinaryNumbers.swift"; sourceTree = "<group>"; };
+		9BD5296D2876729F008B1340 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +79,10 @@
 		9B6CF91827C32FD1007384B2 /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				9B90AB2F2890CCD3004B2A06 /* LeetCode */,
 				9B7D6794285C90990094C304 /* Codility */,
-				9BC9C089282C86070038396E /* Test */,
 				9B6CF92127C3301A007384B2 /* BOJ */,
 				9B6CF92027C3301A007384B2 /* Programmers */,
-				9BD5296D2876729F008B1340 /* main.swift */,
 			);
 			path = SwiftAlgorithm;
 			sourceTree = "<group>";
@@ -112,14 +110,29 @@
 			path = Codility;
 			sourceTree = "<group>";
 		};
-		9BC9C089282C86070038396E /* Test */ = {
+		9B90AB2F2890CCD3004B2A06 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				9BC9C08A282C862E0038396E /* loopTimeTest.swift */,
-				9B85378F283A0C7E00643BEE /* IntegerParsing.swift */,
-				9BC9C08E282DF23B0038396E /* nil-filter.swift */,
+				9B90AB332890E589004B2A06 /* Medium */,
+				9B90AB302890CCDB004B2A06 /* Easy */,
 			);
-			path = Test;
+			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		9B90AB302890CCDB004B2A06 /* Easy */ = {
+			isa = PBXGroup;
+			children = (
+				9BD5296D2876729F008B1340 /* TwoSum.swift */,
+			);
+			path = Easy;
+			sourceTree = "<group>";
+		};
+		9B90AB332890E589004B2A06 /* Medium */ = {
+			isa = PBXGroup;
+			children = (
+				9B90AB312890DA54004B2A06 /* Deci-BinaryNumbers.swift */,
+			);
+			path = Medium;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +196,8 @@
 			files = (
 				9B7D67A4285D74160094C304 /* MaxCounters.swift in Sources */,
 				9B7D67AA285DACF60094C304 /* CountDiv.swift in Sources */,
-				9BD5296E2876729F008B1340 /* main.swift in Sources */,
+				9B90AB322890DA54004B2A06 /* Deci-BinaryNumbers.swift in Sources */,
+				9BD5296E2876729F008B1340 /* TwoSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
