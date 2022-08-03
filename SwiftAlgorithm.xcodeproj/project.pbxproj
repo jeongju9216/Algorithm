@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B7D67A4285D74160094C304 /* MaxCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67A3285D74160094C304 /* MaxCounters.swift */; };
 		9B7D67AA285DACF60094C304 /* CountDiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D67A9285DACF60094C304 /* CountDiv.swift */; };
+		9BF206EE289A1E7800820C6E /* 283.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF206ED289A1E7800820C6E /* 283.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +83,10 @@
 		9BF206E328991D6700820C6E /* 70.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 70.swift; sourceTree = "<group>"; };
 		9BF206E528992A5000820C6E /* 101.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 101.swift; sourceTree = "<group>"; };
 		9BF206E7289943B600820C6E /* 141.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 141.swift; sourceTree = "<group>"; };
+		9BF206E9289956CB00820C6E /* 160.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 160.swift; sourceTree = "<group>"; };
+		9BF206EB289A1B8C00820C6E /* 234.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 234.swift; sourceTree = "<group>"; };
+		9BF206ED289A1E7800820C6E /* 283.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 283.swift; sourceTree = "<group>"; };
+		9BF206EF289A361F00820C6E /* 543.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 543.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +190,10 @@
 				9BF206E328991D6700820C6E /* 70.swift */,
 				9BF206E528992A5000820C6E /* 101.swift */,
 				9BF206E7289943B600820C6E /* 141.swift */,
+				9BF206E9289956CB00820C6E /* 160.swift */,
+				9BF206EB289A1B8C00820C6E /* 234.swift */,
+				9BF206ED289A1E7800820C6E /* 283.swift */,
+				9BF206EF289A361F00820C6E /* 543.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -267,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B7D67A4285D74160094C304 /* MaxCounters.swift in Sources */,
+				9BF206EE289A1E7800820C6E /* 283.swift in Sources */,
 				9B7D67AA285DACF60094C304 /* CountDiv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
