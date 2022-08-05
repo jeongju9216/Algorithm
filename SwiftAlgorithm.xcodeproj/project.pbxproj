@@ -92,6 +92,7 @@
 		9BF206F7289B934E00820C6E /* 66.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 66.swift; sourceTree = "<group>"; };
 		9BF206F9289B943400820C6E /* 69.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 69.swift; sourceTree = "<group>"; };
 		9BF206FB289B995900820C6E /* 88.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 88.swift; sourceTree = "<group>"; };
+		9BF20715289D46A200820C6E /* 112.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 112.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +206,7 @@
 				9BF206F7289B934E00820C6E /* 66.swift */,
 				9BF206F9289B943400820C6E /* 69.swift */,
 				9BF206FB289B995900820C6E /* 88.swift */,
+				9BF20715289D46A200820C6E /* 112.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
