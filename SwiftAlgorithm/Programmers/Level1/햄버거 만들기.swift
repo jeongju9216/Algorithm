@@ -1,10 +1,3 @@
-//
-//  햄버거 만들기.swift
-//  SwiftAlgorithm
-//
-//  Created by 유정주 on 2022/12/06.
-//
-
 import Foundation
 
 func solution(_ ingredient:[Int]) -> Int {
@@ -23,7 +16,7 @@ func solution(_ ingredient:[Int]) -> Int {
         stack.append(num)
         
         while stack.count >= 4 {
-            let sub: [Int] = Array(stack[stack.count-4...stack.count-1])
+            let sub: [Int] = Array(stack.suffix(4))
 
             if sub == [1, 2, 3, 1] {
                 stack.removeLast(4)
@@ -35,7 +28,7 @@ func solution(_ ingredient:[Int]) -> Int {
         }
     }
     
-    if stack.count >= 4 && Array(stack[stack.count-4...stack.count-1]) == [1, 2, 3, 1] {
+    if stack.count >= 4 && Array(stack.suffix(4)) == [1, 2, 3, 1] {
         result += 1
     }
     

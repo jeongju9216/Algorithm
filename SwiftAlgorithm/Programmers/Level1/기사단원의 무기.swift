@@ -28,7 +28,7 @@ func calPower(_ number: Int) -> Int {
     return count
 }
 
-func solution(_ number:Int, _ limit:Int, _ power:Int) -> Int {
+func test(_ number:Int, _ limit:Int, _ power:Int) -> Int {
     
     //기사들은 1~number까지 번호를 가짐
     //각 약수의 개수만큼의 공격력

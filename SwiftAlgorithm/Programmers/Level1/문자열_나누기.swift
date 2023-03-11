@@ -7,7 +7,7 @@
 
 import Foundation
 
-func solution(_ s:String) -> Int {
+func test(_ s:String) -> Int {
     
     //x 카운트는 자기도 포함
     
