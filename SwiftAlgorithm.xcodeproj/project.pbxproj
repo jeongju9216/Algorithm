@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9B2EFEA8294AD54000B02A4E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2EFEA7294AD54000B02A4E /* main.swift */; };
-		9BFEE7D429BC4D73009BB2FB /* 2884.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFEE7D329BC4D73009BB2FB /* 2884.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1069,7 +1068,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B2EFEA8294AD54000B02A4E /* main.swift in Sources */,
-				9BFEE7D429BC4D73009BB2FB /* 2884.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
