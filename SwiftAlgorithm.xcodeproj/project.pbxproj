@@ -467,6 +467,7 @@
 		9BFEE7E029C6EAF4009BB2FB /* 1062.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1062.swift; sourceTree = "<group>"; };
 		9BFEE7E129C71AD6009BB2FB /* 1700.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1700.swift; sourceTree = "<group>"; };
 		9BFEE7E229C7260D009BB2FB /* 1806.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1806.swift; sourceTree = "<group>"; };
+		9BFEE7FD29C7F226009BB2FB /* 11866.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11866.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -770,6 +771,7 @@
 				9BFEE7E029C6EAF4009BB2FB /* 1062.swift */,
 				9BFEE7E129C71AD6009BB2FB /* 1700.swift */,
 				9BFEE7E229C7260D009BB2FB /* 1806.swift */,
+				9BFEE7FD29C7F226009BB2FB /* 11866.swift */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
