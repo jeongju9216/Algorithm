@@ -8,24 +8,24 @@
 //9935 문자열 폭발
 import Foundation
 
-var input = String(readLine()!)
-let bomb = String(readLine()!)
+let input = Array(readLine()!)
+let keyword = readLine()!
+let length = keyword.count
 
 var stack: [Character] = []
-
-for s in input {
-    stack.append(s)
+for char in input {
+    stack.append(char)
     
-    if s == bomb.last! {
-        let count = stack.count
-
-        if count >= bomb.count && String(stack[(count-bomb.count)...]) == bomb {
-            (0..<bomb.count).forEach { _ in
-                stack.popLast()
-            }
+    while stack.count >= length,
+          let last = keyword.last, last == char {
+        let string = String(stack[(stack.count - length)...])
+        if string == keyword {
+            stack.removeLast(length)
+        } else {
+            break
         }
     }
-    
 }
 
-print(stack.isEmpty ? "FRULA" : String(stack))
+let result = stack.isEmpty ? "FRULA" : String(stack)
+print(result)
