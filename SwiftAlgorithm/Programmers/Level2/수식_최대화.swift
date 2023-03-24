@@ -7,67 +7,62 @@
 
 import Foundation
 
-func splitExpression(_ expression: String) -> [String] {
-    var result: [String] = []
-    var str = ""
-    for ch in expression {
-        let s = String(ch)
-        switch s {
-            case "-", "+", "*":
-                result.append(str)
-                result.append(s)
-                str = ""
-            default:
-                str += s
-                break
-        }
-    }
-    
-    result.append(str)
-    return result
+func isOperation(_ string: String) -> Bool {
+    return (string == "+" || string == "-" || string == "*")
 }
 
-func solution(_ expression:String) -> Int64 {
-    let expressionsArr: [[String]] = [["+", "-", "*"], ["+", "*", "-"],
-                                      ["-", "+", "*"], ["-", "*", "+"],
-                                      ["*", "+", "-"], ["*", "-", "+"]]
+func solution(_ expression: String) -> Int64 {
+    let orders: [[String]] = [["+", "-", "*"], ["+", "*", "-"],
+                              ["-", "+", "*"], ["-", "*", "+"],
+                              ["*", "+", "-"], ["*", "-", "+"]]
     
-    let arr = splitExpression(expression)
-    var maxResult: Int64 = Int64.min
-    for expressions in expressionsArr { //6회 반복
-        var calArr: [String] = []
-        var tempArr = arr
-        for exp in expressions { //3회 반복
-            calArr = []
-            if tempArr.contains(exp) {
-                for item in tempArr {
-                    if calArr.count > 0 && calArr.last! == exp {
-                        let _ = calArr.popLast()!
-                        let num = calArr.popLast()!
-                        
-                        switch exp {
-                            case "+": calArr.append(String(Int64(num)! + Int64(item)!))
-                            case "-": calArr.append(String(Int64(num)! - Int64(item)!))
-                            case "*": calArr.append(String(Int64(num)! * Int64(item)!))
-                            default: break
-                        }
-                    } else {
-                        calArr.append(item)
-                    }
-                }
-            }
-            tempArr = calArr
+    
+    var arr: [String] = []
+    var tmp: String = ""
+    for char in expression {
+        if char == "+" || char == "-" || char == "*" {
+            arr.append(tmp)
+            tmp = ""
             
-            if tempArr.count == 1 {
-                break
-            }
-        }
-                
-        if !tempArr.isEmpty {
-            let num = Int64(abs(Int64(tempArr[0])!))
-            maxResult = max(maxResult, num)
+            arr.append(String(char))
+        } else {
+            tmp += String(char)
         }
     }
+    arr.append(tmp)
     
-    return maxResult
+    var result: Int64 = 0
+    for order in orders {
+        var tmpArr = arr
+        for op in order {
+            var stack: [String] = []
+        
+            for str in tmpArr {
+                //계산
+                if let last = stack.last, isOperation(last), last == op {
+                    let op = stack.removeLast()
+                    let num1 = Int64(stack.removeLast())!
+                    let num2 = Int64(str)!
+                    
+                    switch op {
+                    case "+":
+                        stack.append("\(num1 + num2)")
+                    case "-":
+                        stack.append("\(num1 - num2)")
+                    case "*":
+                        stack.append("\(num1 * num2)")
+                    default: break
+                    }
+                } else {
+                    stack.append(str)
+                }
+            }
+            
+            tmpArr = stack
+        }
+        
+        result = max(result, Int64(abs(Int(tmpArr.first!)!)))
+    }
+    
+    return result
 }
