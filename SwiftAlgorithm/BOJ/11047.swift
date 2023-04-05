@@ -8,25 +8,25 @@
 //11047 동전 0
 import Foundation
 
-let input1 = readLine()!.split(separator: " ").map { Int(String($0))! }
-let count = input1[0]
-var sum = input1[1]
-
-var coins: [Int] = []
-var coinCount = 0
-
-for _ in 0..<count {
-    let input = Int(readLine()!)!
-    coins.append(input)
+let nk = readLine()!.components(separatedBy: " ").map { Int($0)! }
+let n = nk[0]
+var k = nk[1]
+var arr: [Int] = []
+for _ in 0..<n {
+    arr.append(Int(readLine()!)!)
 }
 
-coins.sort(by: >)
-
-for coin in coins {
-    if sum >= coin {
-        coinCount += (sum / coin)
-        sum %= coin
+var result = 0
+for money in arr.reversed() {
+    if money <= k {
+        let cnt = k / money
+        result += cnt
+        k -= (cnt * money)
+    }
+    
+    if k <= 0 {
+        break
     }
 }
 
-print("\(coinCount)")
+print(result)

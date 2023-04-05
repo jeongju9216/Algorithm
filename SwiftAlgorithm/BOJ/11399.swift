@@ -8,10 +8,14 @@
 //11399 ATM
 import Foundation
 
-let count = Int(readLine()!)!
-var times: [Int] = readLine()!.split { $0 == " " }.map { Int(String($0))! }.sorted()
+let n = Int(readLine()!)!
+let input = readLine()!.components(separatedBy: " ").map { Int($0)! }.sorted()
 
-(1..<times.count).forEach { times[$0] += times[$0-1] }
+var result = 0, sum = 0
+for i in 0..<input.count {
+    sum += input[i]
+    
+    result += sum
+}
 
-print(times.reduce(0, +))
-
+print(result)
