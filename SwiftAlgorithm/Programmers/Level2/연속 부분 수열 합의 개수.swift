@@ -14,12 +14,7 @@ func solution(_ elements:[Int]) -> Int {
         for i in 0..<elements.count {
             var sum: Int = 0
             for j in i..<(i+size) {
-                var index: Int = j
-                if index >= elements.count {
-                    index -= elements.count
-                }
-                
-                sum += elements[index]
+                sum += elements[j % elements.count]
             }
             result.insert(sum)
         }
