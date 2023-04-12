@@ -8,52 +8,55 @@
 //1012 유기농 배추
 import Foundation
 
-let count = Int(readLine()!)!
+let dx = [-1, 1, 0, 0], dy = [0, 0, -1, 1]
 
-var farmW = 0, farmH = 0
-var farm: [[Bool]] = []
-
-let dx: [Int] = [0, 0, -1, 1]
-let dy: [Int] = [-1, 1, 0, 0]
-
-for _ in 0..<count {
-    //input
-    let input = readLine()!.split(separator: " ").map { Int(String($0))! }
-    farmW = input[0]
-    farmH = input[1]
-    let cabbageCount = input[2]
+func bfs(_ x: Int, _ y: Int) {
+    var queue: [(x: Int, y: Int)] = [(x, y)]
+    var index = 0
     
-    farm = Array(repeating: Array(repeating: false, count: farmW), count: farmH)
-    for _ in 0..<cabbageCount {
-        let positions = readLine()!.split(separator: " ").map { Int(String($0))! }
-    
-        farm[positions[1]][positions[0]] = true
-    }
-    
-    var count = 0
-    for y in 0..<farmH {
-        for x in 0..<farmW {
-            if farm[y][x] {
-                dfs(y: y, x: x)
-                count += 1
-            }
-        }
-    }
-    
-    print(count)
-}
-
-func dfs(y: Int, x: Int) {
-    if farm[y][x] {
-        farm[y][x] = false
+    while index < queue.count {
+        let node = queue[index]
+        index += 1
         
         for i in 0..<4 {
-            let nextY = y + dy[i], nextX = x + dx[i]
-            if nextY >= 0 && nextY < farmH && nextX >= 0 && nextX < farmW {
-                if farm[y+dy[i]][x+dx[i]] {
-                    dfs(y: y+dy[i], x: x+dx[i])
-                }
+            let nx = node.x + dx[i]
+            let ny = node.y + dy[i]
+            
+            guard (0..<n) ~= nx, (0..<m) ~= ny, !visited[nx][ny] else {
+                continue
+            }
+            
+            visited[nx][ny] = true
+            if map[nx][ny] == 1 {
+                queue.append((nx, ny))
             }
         }
     }
+}
+
+var testcase = Int(readLine()!)!
+var m = 0, n = 0, k = 0
+var map: [[Int]] = []
+var visited: [[Bool]] = []
+for _ in 0..<testcase {
+    let mnk = readLine()!.split { $0 == " " }.map { Int($0)! }
+    m = mnk[0]; n = mnk[1]; k = mnk[2]
+    map = Array(repeating: Array(repeating: 0, count: m), count: n)
+    for _ in 0..<k {
+        let xy = readLine()!.split { $0 == " " }.map { Int($0)! }
+        map[xy[1]][xy[0]] = 1
+    }
+    
+    visited = Array(repeating: Array(repeating: false, count: m), count: n)
+    var result = 0
+    for i in 0..<n {
+        for j in 0..<m {
+            if !visited[i][j] && map[i][j] == 1 {
+                result += 1
+                bfs(i, j)
+            }
+        }
+    }
+    
+    print(result)
 }
