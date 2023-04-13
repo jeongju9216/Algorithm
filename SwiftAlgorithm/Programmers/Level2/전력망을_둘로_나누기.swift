@@ -7,55 +7,45 @@
 
 import Foundation
 
-func solution(_ n:Int, _ wires:[[Int]]) -> Int {
-    var graph: [Int: [Int]] = [:]
-    for i in 1...n {
-        graph.updateValue([], forKey: i)
-    }
+//양방향 그래프로 만들기
+//하나씩 끊으면서 dfs로 카운팅하기
+//n - 개수 = 나머지 개수
 
-    for wire in wires {
-        graph[wire[0]]?.append(wire[1])
-        graph[wire[1]]?.append(wire[0])
-    }
-
-    func bfs(_ start: Int) -> Int {
-        var queue: [Int] = [start]
-        var index = 0
-
-        while index < queue.count {
-            let last = queue[index]
-            index += 1
-
-            visited[last] = true
-            for node in graph[last]! {
-                if !visited[node] {
-                    queue.append(node)
-                }
+func dfs(_ num: Int) {
+    if !visited[num] {
+        visited[num] = true
+        count += 1
+        
+        for node in graph[num] ?? [] {
+            if !visited[node] {
+                dfs(node)
             }
         }
-
-        return index
     }
-    
-    var visited = Array(repeating: false, count: n+1)
-    visited[1] = true
-    let count = bfs(2)
-    var result = abs(count - (n - count))
-    
-    for i in 1...n {
-        visited = Array(repeating: false, count: n+1)
-        visited[i] = true
-        let count = bfs(1)
-        result = min(result, abs(count - (n - count)))
-    }
-    
-    // print("counts: \(counts)")
-    return result
 }
 
-//edge를 하나씩 삭제하면서 bfs나 dfs를 돌린다.
-//하나씩 삭제 한다 -> 시작할 때 방문한 노드를 하나씩 추가한다.
-//노드의 개수를 센다.
+var graph: [Int: [Int]] = [:]
+var visited: [Bool] = []
+var count = 0
 
-//원래는 트리 형태이기 때문에 동떨어진 노드는 없다.
-//즉, 전선 하나를 끊으면 무조건 두 구역으로 나뉜다.
+func solution(_ n:Int, _ wires:[[Int]]) -> Int {
+    
+    var result = Int.max
+    for i in 0..<wires.count {
+        count = 0
+        visited = Array(repeating: false, count: n + 1)
+        graph = [:]
+        
+        for j in 0..<wires.count where i != j {
+            graph[wires[j][0], default: []].append(wires[j][1])
+            graph[wires[j][1], default: []].append(wires[j][0])
+        }
+        
+        dfs(1)
+        
+        let diff = abs(count - (n - count))
+        result = min(result, diff)
+    }
+    
+    return result
+}
