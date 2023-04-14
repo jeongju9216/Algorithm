@@ -8,14 +8,19 @@
 import Foundation
 
 func solution(_ food:[Int]) -> String {
-    var chars: [String] = []
     
+    var result = ""
     for i in 1..<food.count {
-        let num: Int = Int(floor(Double(food[i]) / 2.0))
-        chars += Array(repeating: "\(i)", count: num)
+        var count = food[i]
+        if count % 2 != 0 {
+            count -= 1
+        }
+        count /= 2
+        
+        result += String(repeating: "\(i)", count: count)
     }
-    chars += ["0"]
-    chars += chars[0..<chars.count-1].reversed()
     
-    return chars.joined()
+    result = result + "0" + result.reversed()
+    
+    return result
 }
