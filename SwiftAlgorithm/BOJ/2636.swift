@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  2636.swift
 //  SwiftAlgorithm
 //
 //  Created by 유정주 on 2022/06/03.
@@ -7,78 +7,56 @@
 
 import Foundation
 
-let input = readLine()!.split { $0 == " " }.map { Int(String($0))! }
-let w = input[1], h = input[0]
+typealias Node = (x: Int, y: Int)
+let dx = [-1, 1, 0, 0], dy = [0, 0, -1, 1]
+
+let hw = readLine()!.components(separatedBy: " ").map { Int($0)! }
+let h = hw[0], w = hw[1]
 
 var map: [[Int]] = []
+var total = 0
 for _ in 0..<h {
-    let input = readLine()!.split { $0 == " " }.map { Int(String($0))! }
+    let input = readLine()!.components(separatedBy: " ").map { Int($0)! }
     map.append(input)
+    
+    total += input.filter { $0 == 1 }.count
 }
 
-let dh: [Int] = [-1, 1, 0, 0]
-let dw: [Int] = [0, 0, -1, 1]
-
-//다음 칸이 치즈인 빈칸 좌표 구하기
-func findFirstCheese() -> (Int, Int)? {
-    for i in 0..<h {
-        for j in 0..<w {
-            if map[i][j] == 1 {
-                return (i, j-1)
-            }
-        }
-    }
+var time = 0, prev = 0
+repeat {
+    time += 1
+    prev = total
     
-    return nil
-}
-
-func meltingCheese() -> Int {
-    var meltingCount: Int = 0
-
-    guard let cheese = findFirstCheese() else { return 0 }
-    
-    var queue: [(h: Int, w: Int)] = [cheese]
-    var index = 0
     var visited: [[Bool]] = Array(repeating: Array(repeating: false, count: w), count: h)
-    visited[cheese.0][cheese.1] = true
+    var tmpMap = map
+    
+    var queue: [Node] = [(0, 0)]
+    var index = 0
+    
+    visited[0][0] = true
     
     while index < queue.count {
         let node = queue[index]
         index += 1
         
-        for i in 0..<4 { //상하좌우
-            let nextH = node.h + dh[i]
-            let nextW = node.w + dw[i]
+        for i in 0..<4 {
+            let nx = node.x + dx[i]
+            let ny = node.y + dy[i]
             
-            if nextH >= 0 && nextH < h && nextW >= 0 && nextW < w {
-                if !visited[nextH][nextW] { //방문하지 않은 곳만 확인
-                    visited[nextH][nextW] = true
-                    
-                    if map[nextH][nextW] == 1 { //치즈면 가장자리 치즈임
-                        map[nextH][nextW] = 0
-                        meltingCount += 1
-                    } else if map[nextH][nextW] == 0 { //빈공간 탐색
-                        queue.append((nextH, nextW))
-                    }
-                }
+            guard (0..<h) ~= nx, (0..<w) ~= ny, !visited[nx][ny] else {
+                continue
+            }
+            
+            visited[nx][ny] = true
+            if tmpMap[nx][ny] == 1 {
+                map[nx][ny] = 0
+                total -= 1
+            } else {
+                queue.append((nx, ny))
             }
         }
     }
-    
-    return meltingCount
-}
-
-var time: Int = 0
-var cheeseCount: Int = 0
-while true {
-    let meltingCount = meltingCheese()
-    if meltingCount == 0 {
-        break
-    }
-    
-    cheeseCount = meltingCount
-    time += 1
-}
+} while total > 0
 
 print(time)
-print(cheeseCount)
+print(prev)
