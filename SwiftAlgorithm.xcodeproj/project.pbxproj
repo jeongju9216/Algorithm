@@ -297,6 +297,21 @@
 		9B2EFE96294ACBAC00B02A4E /* 10844.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 10844.swift; sourceTree = "<group>"; };
 		9B2EFE97294ACBAC00B02A4E /* 2193.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2193.swift; sourceTree = "<group>"; };
 		9B2EFEA7294AD54000B02A4E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9B4242E52A1F2BAB000EA747 /* 10871.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 10871.py; sourceTree = "<group>"; };
+		9B4242E72A1F2F03000EA747 /* 1000.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1000.py; sourceTree = "<group>"; };
+		9B4242E82A1F3175000EA747 /* 2480.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2480.py; sourceTree = "<group>"; };
+		9B4242EA2A1F3299000EA747 /* 2576.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2576.py; sourceTree = "<group>"; };
+		9B4242EB2A1F348B000EA747 /* 2309.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2309.py; sourceTree = "<group>"; };
+		9B4242EC2A1F360D000EA747 /* 15552.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 15552.py; sourceTree = "<group>"; };
+		9B4242ED2A1F3743000EA747 /* 2562.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2562.py; sourceTree = "<group>"; };
+		9B4242EE2A1F3ACC000EA747 /* 10808.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 10808.py; sourceTree = "<group>"; };
+		9B4242EF2A1F41C6000EA747 /* 2577.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2577.py; sourceTree = "<group>"; };
+		9B4242F02A204D17000EA747 /* 1475.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1475.py; sourceTree = "<group>"; };
+		9B4242F32A20A29E000EA747 /* 3273.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3273.swift; sourceTree = "<group>"; };
+		9B4242F42A20A436000EA747 /* 10807.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 10807.py; sourceTree = "<group>"; };
+		9B4242F52A20A465000EA747 /* 3273.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 3273.py; sourceTree = "<group>"; };
+		9B4242F62A20BEBF000EA747 /* 13300.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13300.swift; sourceTree = "<group>"; };
+		9B4242F72A20C089000EA747 /* 13300.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 13300.py; sourceTree = "<group>"; };
 		9B42D4C7290FAC540053DBF3 /* 2373.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2373.swift; sourceTree = "<group>"; };
 		9B42D4C8290FAF580053DBF3 /* 1832.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1832.swift; sourceTree = "<group>"; };
 		9B42D4C92910E6050053DBF3 /* 1967.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1967.swift; sourceTree = "<group>"; };
@@ -1158,6 +1173,36 @@
 				9BE938B32A1CB23700A5777B /* 4485.swift */,
 				9BE938B42A1CB6DD00A5777B /* 1520.swift */,
 				9BE938B52A1CD2DA00A5777B /* 9084.swift */,
+				9B4242F32A20A29E000EA747 /* 3273.swift */,
+				9B4242F62A20BEBF000EA747 /* 13300.swift */,
+			);
+			path = BOJ;
+			sourceTree = "<group>";
+		};
+		9B4242E42A1F2B86000EA747 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				9B4242E62A1F2BAE000EA747 /* BOJ */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		9B4242E62A1F2BAE000EA747 /* BOJ */ = {
+			isa = PBXGroup;
+			children = (
+				9B4242E52A1F2BAB000EA747 /* 10871.py */,
+				9B4242E72A1F2F03000EA747 /* 1000.py */,
+				9B4242E82A1F3175000EA747 /* 2480.py */,
+				9B4242EA2A1F3299000EA747 /* 2576.py */,
+				9B4242EB2A1F348B000EA747 /* 2309.py */,
+				9B4242EC2A1F360D000EA747 /* 15552.py */,
+				9B4242ED2A1F3743000EA747 /* 2562.py */,
+				9B4242EE2A1F3ACC000EA747 /* 10808.py */,
+				9B4242EF2A1F41C6000EA747 /* 2577.py */,
+				9B4242F02A204D17000EA747 /* 1475.py */,
+				9B4242F42A20A436000EA747 /* 10807.py */,
+				9B4242F52A20A465000EA747 /* 3273.py */,
+				9B4242F72A20C089000EA747 /* 13300.py */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
@@ -1166,6 +1211,7 @@
 			isa = PBXGroup;
 			children = (
 				9B6CF91827C32FD1007384B2 /* SwiftAlgorithm */,
+				9B4242E42A1F2B86000EA747 /* Python */,
 				9B6CF91727C32FD1007384B2 /* Products */,
 			);
 			sourceTree = "<group>";
