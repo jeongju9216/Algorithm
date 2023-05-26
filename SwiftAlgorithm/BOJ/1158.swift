@@ -13,20 +13,15 @@ let n = nk[0], k = nk[1]
 var arr = Array(1...n)
 var result: [Int] = []
 
-var count = 1
 var index = 0
-while result.count < n {
-    while arr[index % n] == -1 {
-        index += 1
-    }
-
-    if count % k == 0 {
-        result.append(arr[index % n])
-        arr[index % n] = -1
+for i in 0..<n {
+    index += k-1
+    if index >= arr.count {
+        index %= arr.count
     }
     
-    count += 1
-    index += 1
+    result.append(arr[index])
+    arr.remove(at: index)
 }
 
 var string = "<"
