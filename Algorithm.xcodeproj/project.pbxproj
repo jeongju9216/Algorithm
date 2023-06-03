@@ -571,6 +571,23 @@
 		9B9F471229E90C99008E0800 /* 성격 유형 검사하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "성격 유형 검사하기.swift"; sourceTree = "<group>"; };
 		9BA92CA42A29A94E003796C6 /* 14891.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 14891.py; sourceTree = "<group>"; };
 		9BA92CB02A29CACD003796C6 /* 14499.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 14499.py; sourceTree = "<group>"; };
+		9BA92CB22A29F0B8003796C6 /* 2750.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2750.py; sourceTree = "<group>"; };
+		9BA92CB32A29F15D003796C6 /* 2751.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2751.py; sourceTree = "<group>"; };
+		9BA92CB42A29F36A003796C6 /* 10989.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 10989.py; sourceTree = "<group>"; };
+		9BA92CB52A29F7C9003796C6 /* 11931.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 11931.py; sourceTree = "<group>"; };
+		9BA92CB62A2A0221003796C6 /* 15688.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 15688.py; sourceTree = "<group>"; };
+		9BA92CB72A2A03A6003796C6 /* 11650.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 11650.py; sourceTree = "<group>"; };
+		9BA92CB82A2A04D3003796C6 /* 11651.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 11651.py; sourceTree = "<group>"; };
+		9BA92CB92A2A07C4003796C6 /* 5648.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 5648.py; sourceTree = "<group>"; };
+		9BA92CBA2A2A0A3D003796C6 /* 1181.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1181.py; sourceTree = "<group>"; };
+		9BA92CBB2A2ACAAD003796C6 /* 13335.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 13335.py; sourceTree = "<group>"; };
+		9BA92CBD2A2ACD78003796C6 /* 13335.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13335.swift; sourceTree = "<group>"; };
+		9BA92CBF2A2B1D63003796C6 /* 2910.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2910.py; sourceTree = "<group>"; };
+		9BA92CC02A2B1D77003796C6 /* 2910.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2910.swift; sourceTree = "<group>"; };
+		9BA92CC12A2B1F5C003796C6 /* 11656.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 11656.py; sourceTree = "<group>"; };
+		9BA92CC22A2B1F69003796C6 /* 11656.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11656.swift; sourceTree = "<group>"; };
+		9BA92CC32A2B26D9003796C6 /* 10825.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10825.swift; sourceTree = "<group>"; };
+		9BA92CC42A2B2878003796C6 /* 10825.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 10825.py; sourceTree = "<group>"; };
 		9BC9619A28E32CC500DBF323 /* 1688.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1688.swift; sourceTree = "<group>"; };
 		9BC9619B28E32E4D00DBF323 /* 832.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 832.swift; sourceTree = "<group>"; };
 		9BC9619C28E3CD6E00DBF323 /* 2221.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2221.swift; sourceTree = "<group>"; };
@@ -1010,6 +1027,7 @@
 				9BA92CA72A29A9A7003796C6 /* 기초 */,
 				9BA92CA62A29A976003796C6 /* 배열 */,
 				9BA92CA52A29A958003796C6 /* 시뮬레이션 */,
+				9BA92CB12A29EFE4003796C6 /* 정렬 */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
@@ -1139,6 +1157,9 @@
 				9B17C4232A04E52B00E80721 /* 14890.swift */,
 				9B17C4182A034A7900E80721 /* 14891.swift */,
 				9B9F46C829DCFFFE008E0800 /* 14916.swift */,
+				9BA92CBD2A2ACD78003796C6 /* 13335.swift */,
+				9BA92CC22A2B1F69003796C6 /* 11656.swift */,
+				9BA92CC32A2B26D9003796C6 /* 10825.swift */,
 			);
 			path = 10000;
 			sourceTree = "<group>";
@@ -1235,6 +1256,7 @@
 				9BE938B22A1C6F5400A5777B /* 4307.swift */,
 				9BE938B32A1CB23700A5777B /* 4485.swift */,
 				9B2EFE70294ACB9F00B02A4E /* 4963.swift */,
+				9BA92CC02A2B1D77003796C6 /* 2910.swift */,
 			);
 			path = 2000;
 			sourceTree = "<group>";
@@ -1268,7 +1290,7 @@
 		9B6CF90D27C32FD1007384B2 = {
 			isa = PBXGroup;
 			children = (
-				9B6CF91827C32FD1007384B2 /* SwiftAlgorithm */,
+				9B6CF91827C32FD1007384B2 /* Swift */,
 				9B4242E42A1F2B86000EA747 /* Python */,
 				9B6CF91727C32FD1007384B2 /* Products */,
 			);
@@ -1282,7 +1304,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B6CF91827C32FD1007384B2 /* SwiftAlgorithm */ = {
+		9B6CF91827C32FD1007384B2 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
 				9B2EFEA7294AD54000B02A4E /* main.swift */,
@@ -1292,7 +1314,7 @@
 				9B90AB2F2890CCD3004B2A06 /* LeetCode */,
 				9B7D6794285C90990094C304 /* Codility */,
 			);
-			path = SwiftAlgorithm;
+			path = Swift;
 			sourceTree = "<group>";
 		};
 		9B7D6794285C90990094C304 /* Codility */ = {
@@ -1574,6 +1596,7 @@
 				9B4243392A297974000EA747 /* 11559.py */,
 				9BA92CA42A29A94E003796C6 /* 14891.py */,
 				9BA92CB02A29CACD003796C6 /* 14499.py */,
+				9BA92CBB2A2ACAAD003796C6 /* 13335.py */,
 			);
 			name = "시뮬레이션";
 			path = "시뮬레이션";
@@ -1724,6 +1747,26 @@
 			path = "연결리스트";
 			sourceTree = "<group>";
 		};
+		9BA92CB12A29EFE4003796C6 /* 정렬 */ = {
+			isa = PBXGroup;
+			children = (
+				9BA92CB22A29F0B8003796C6 /* 2750.py */,
+				9BA92CB32A29F15D003796C6 /* 2751.py */,
+				9BA92CB42A29F36A003796C6 /* 10989.py */,
+				9BA92CB52A29F7C9003796C6 /* 11931.py */,
+				9BA92CB62A2A0221003796C6 /* 15688.py */,
+				9BA92CB72A2A03A6003796C6 /* 11650.py */,
+				9BA92CB82A2A04D3003796C6 /* 11651.py */,
+				9BA92CB92A2A07C4003796C6 /* 5648.py */,
+				9BA92CBA2A2A0A3D003796C6 /* 1181.py */,
+				9BA92CBF2A2B1D63003796C6 /* 2910.py */,
+				9BA92CC12A2B1F5C003796C6 /* 11656.py */,
+				9BA92CC42A2B2878003796C6 /* 10825.py */,
+			);
+			name = "정렬";
+			path = "정렬";
+			sourceTree = "<group>";
+		};
 		9BFCBB0728AC6AFB00B52A7C /* KakaoProgrammers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1770,7 +1813,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9B6CF91127C32FD1007384B2 /* Build configuration list for PBXProject "SwiftAlgorithm" */;
+			buildConfigurationList = 9B6CF91127C32FD1007384B2 /* Build configuration list for PBXProject "Algorithm" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1961,7 +2004,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B6CF91127C32FD1007384B2 /* Build configuration list for PBXProject "SwiftAlgorithm" */ = {
+		9B6CF91127C32FD1007384B2 /* Build configuration list for PBXProject "Algorithm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B6CF91B27C32FD1007384B2 /* Debug */,
