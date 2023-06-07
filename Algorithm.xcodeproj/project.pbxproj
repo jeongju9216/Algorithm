@@ -573,6 +573,9 @@
 		9BA3E4342A2F6968001D6C49 /* 11000.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11000.swift; sourceTree = "<group>"; };
 		9BA3E4352A2F697D001D6C49 /* 11000.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 11000.py; sourceTree = "<group>"; };
 		9BA3E4362A2F6998001D6C49 /* 1439.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1439.py; sourceTree = "<group>"; };
+		9BA3E43A2A301A31001D6C49 /* 14890.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 14890.py; sourceTree = "<group>"; };
+		9BA3E43B2A3026D8001D6C49 /* 16234.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 16234.py; sourceTree = "<group>"; };
+		9BA3E43C2A3042F3001D6C49 /* 16236.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 16236.py; sourceTree = "<group>"; };
 		9BA92CA42A29A94E003796C6 /* 14891.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 14891.py; sourceTree = "<group>"; };
 		9BA92CB02A29CACD003796C6 /* 14499.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 14499.py; sourceTree = "<group>"; };
 		9BA92CB22A29F0B8003796C6 /* 2750.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2750.py; sourceTree = "<group>"; };
@@ -1634,6 +1637,9 @@
 				9BA92CC92A2CB7E6003796C6 /* 14502.py */,
 				9BA92CDA2A2E24D2003796C6 /* 14888.py */,
 				9BA3E4332A2F39B9001D6C49 /* 14889.py */,
+				9BA3E43A2A301A31001D6C49 /* 14890.py */,
+				9BA3E43B2A3026D8001D6C49 /* 16234.py */,
+				9BA3E43C2A3042F3001D6C49 /* 16236.py */,
 			);
 			name = "시뮬레이션";
 			path = "시뮬레이션";
