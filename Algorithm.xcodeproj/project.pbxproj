@@ -620,6 +620,11 @@
 		9BA92CDA2A2E24D2003796C6 /* 14888.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 14888.py; sourceTree = "<group>"; };
 		9BB1D2122A32111500BC06F9 /* 2230.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2230.swift; sourceTree = "<group>"; };
 		9BB1D2142A32136700BC06F9 /* 2230.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2230.py; sourceTree = "<group>"; };
+		9BB1D2152A32BC0200BC06F9 /* 1806.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1806.py; sourceTree = "<group>"; };
+		9BB1D2162A32D67500BC06F9 /* 1644.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1644.py; sourceTree = "<group>"; };
+		9BB1D2172A32D68200BC06F9 /* 1644.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1644.swift; sourceTree = "<group>"; };
+		9BB1D2182A32E24A00BC06F9 /* 2003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2003.swift; sourceTree = "<group>"; };
+		9BB1D2192A3352D200BC06F9 /* 13144.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13144.swift; sourceTree = "<group>"; };
 		9BC9619A28E32CC500DBF323 /* 1688.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1688.swift; sourceTree = "<group>"; };
 		9BC9619B28E32E4D00DBF323 /* 832.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 832.swift; sourceTree = "<group>"; };
 		9BC9619C28E3CD6E00DBF323 /* 2221.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2221.swift; sourceTree = "<group>"; };
@@ -1130,6 +1135,7 @@
 				9BFDF7332A14914D005E3953 /* 1992.swift */,
 				9BA92CCF2A2D6FF6003796C6 /* 1026.swift */,
 				9BA92CD62A2DBA24003796C6 /* 1744.swift */,
+				9BB1D2172A32D68200BC06F9 /* 1644.swift */,
 			);
 			path = 1000;
 			sourceTree = "<group>";
@@ -1197,6 +1203,7 @@
 				9BA92CC22A2B1F69003796C6 /* 11656.swift */,
 				9BA92CC32A2B26D9003796C6 /* 10825.swift */,
 				9BA3E4342A2F6968001D6C49 /* 11000.swift */,
+				9BB1D2192A3352D200BC06F9 /* 13144.swift */,
 			);
 			path = 10000;
 			sourceTree = "<group>";
@@ -1298,6 +1305,7 @@
 				9BA92CD42A2DA5EA003796C6 /* 2457.swift */,
 				9BA92CD82A2DFBD7003796C6 /* 2170.swift */,
 				9BB1D2122A32111500BC06F9 /* 2230.swift */,
+				9BB1D2182A32E24A00BC06F9 /* 2003.swift */,
 			);
 			path = 2000;
 			sourceTree = "<group>";
@@ -1844,6 +1852,8 @@
 			isa = PBXGroup;
 			children = (
 				9BB1D2142A32136700BC06F9 /* 2230.py */,
+				9BB1D2152A32BC0200BC06F9 /* 1806.py */,
+				9BB1D2162A32D67500BC06F9 /* 1644.py */,
 			);
 			name = "투포인터";
 			path = "투포인터";
