@@ -30,12 +30,12 @@ class  FileIO {
         while now == 10 || now == 32 { // 공백과 줄바꿈 무시
             now = read()
         }
-        
+
         if now == 45{ // 음수 처리
             isPositive.toggle()
             now = read()
         }
-        
+
         while now >= 48, now <= 57 {
             sum = sum * 10 + Int(now-48)
             now = read()
@@ -65,31 +65,41 @@ let file = FileIO()
 let ndkc = [file.readInt(), file.readInt(), file.readInt(), file.readInt()]
 //let ndkc = readLine()!.components(separatedBy: " ").map { Int($0)! }
 let n = ndkc[0], d = ndkc[1], k = ndkc[2], c = ndkc[3]
-var input: [Int] = []
+var arr: [Int] = []
 for _ in 0..<n {
-//    input.append(Int(readLine()!)!)
-    input.append(file.readInt())
+    arr.append(file.readInt())
 }
 
-var left = 0, right = 0
-var check = Array(repeating: 0, count: 3001)
+var left = 0, right = k - 1
+var checked = Array(repeating: 0, count: d + 1)
 var result = 0, count = 0
-while left < n {
-    check[input[right % n]] += 1
-    if check[input[right % n]] == 1 {
+
+//처음 k개
+for i in left...right {
+    checked[arr[i]] += 1
+    if checked[arr[i]] == 1 {
         count += 1
     }
-    right += 1
-    
-    if right - left > k {
-        check[input[left]] -= 1
-        if check[input[left]] == 0 {
-            count -= 1
-        }
-        left += 1
+}
+result = count
+
+while left < n {
+    checked[arr[left]] -= 1
+    if checked[arr[left]] == 0 {
+        count -= 1
     }
-    
-    if check[c] == 0 {
+    left += 1
+
+    right += 1
+    if right == n {
+        right = 0
+    }
+    checked[arr[right]] += 1
+    if checked[arr[right]] == 1 {
+        count += 1
+    }
+
+    if checked[c] == 0 {
         result = max(result, count + 1)
     } else {
         result = max(result, count)
