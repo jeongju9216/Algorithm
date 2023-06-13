@@ -627,6 +627,11 @@
 		9BB1D2192A3352D200BC06F9 /* 13144.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13144.swift; sourceTree = "<group>"; };
 		9BB1D21C2A34B7E300BC06F9 /* 22862.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 22862.py; sourceTree = "<group>"; };
 		9BB1D21D2A3561AF00BC06F9 /* 2531.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2531.swift; sourceTree = "<group>"; };
+		9BB1D21E2A36D9D500BC06F9 /* 2531.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2531.py; sourceTree = "<group>"; };
+		9BB1D21F2A36DCB400BC06F9 /* 20922.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 20922.py; sourceTree = "<group>"; };
+		9BB1D2212A36DFC500BC06F9 /* 7785.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 7785.py; sourceTree = "<group>"; };
+		9BB1D2222A36E49B00BC06F9 /* 13414.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 13414.py; sourceTree = "<group>"; };
+		9BB1D2232A36E4AA00BC06F9 /* 13414.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13414.swift; sourceTree = "<group>"; };
 		9BC9619A28E32CC500DBF323 /* 1688.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1688.swift; sourceTree = "<group>"; };
 		9BC9619B28E32E4D00DBF323 /* 832.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 832.swift; sourceTree = "<group>"; };
 		9BC9619C28E3CD6E00DBF323 /* 2221.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2221.swift; sourceTree = "<group>"; };
@@ -1069,6 +1074,7 @@
 				9BA92CB12A29EFE4003796C6 /* 정렬 */,
 				9BA92CCA2A2D5479003796C6 /* 그리디 */,
 				9BB1D2132A32134D00BC06F9 /* 투포인터 */,
+				9BB1D2202A36DFB200BC06F9 /* 해시 */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
@@ -1206,6 +1212,7 @@
 				9BA92CC32A2B26D9003796C6 /* 10825.swift */,
 				9BA3E4342A2F6968001D6C49 /* 11000.swift */,
 				9BB1D2192A3352D200BC06F9 /* 13144.swift */,
+				9BB1D2232A36E4AA00BC06F9 /* 13414.swift */,
 			);
 			path = 10000;
 			sourceTree = "<group>";
@@ -1247,18 +1254,22 @@
 		9B4243022A219B67000EA747 /* 2000 */ = {
 			isa = PBXGroup;
 			children = (
+				9BB1D2182A32E24A00BC06F9 /* 2003.swift */,
 				9B2EFE76294ACB9F00B02A4E /* 2146.swift */,
 				9B2EFE92294ACBAB00B02A4E /* 2156.swift */,
 				9BFEE7FE29C7F97B009BB2FB /* 2164.swift */,
 				9B17C4222A03D6D400E80721 /* 2167.swift */,
+				9BA92CD82A2DFBD7003796C6 /* 2170.swift */,
 				9B2EFE6E294ACB9E00B02A4E /* 2178.swift */,
 				9B2EFE97294ACBAC00B02A4E /* 2193.swift */,
 				9B9F470129E66E5F008E0800 /* 2206.swift */,
 				9B9F46C729DCEF09008E0800 /* 2212.swift */,
 				9B2EFE21294ACB6500B02A4E /* 2217.swift */,
+				9BB1D2122A32111500BC06F9 /* 2230.swift */,
 				9B811E892A0B559A008A660E /* 2346.swift */,
 				9B2EFE41294ACB9200B02A4E /* 2420.swift */,
 				9B811E8F2A0CA506008A660E /* 2428.swift */,
+				9BA92CD42A2DA5EA003796C6 /* 2457.swift */,
 				9B9F46A829D51E22008E0800 /* 2470.swift */,
 				9B2EFE4B294ACB9300B02A4E /* 2475.swift */,
 				9B2EFE0C294ACB5500B02A4E /* 2480.swift */,
@@ -1269,6 +1280,7 @@
 				9B2EFE0B294ACB5500B02A4E /* 2525.swift */,
 				9B9F46F129E3FEFF008E0800 /* 2529.swift */,
 				9B2EFE06294ACB5400B02A4E /* 2530.swift */,
+				9BB1D21D2A3561AF00BC06F9 /* 2531.swift */,
 				9B2EFE40294ACB9200B02A4E /* 2557.swift */,
 				9B2EFE45294ACB9200B02A4E /* 2558.swift */,
 				9B9F46FD29E627BF008E0800 /* 2573.swift */,
@@ -1287,6 +1299,7 @@
 				9B2EFE05294ACB5400B02A4E /* 2845.swift */,
 				9B2EFE1C294ACB6500B02A4E /* 2875.swift */,
 				9BFEE7D329BC4D73009BB2FB /* 2884.swift */,
+				9BA92CC02A2B1D77003796C6 /* 2910.swift */,
 				9B2EFE42294ACB9200B02A4E /* 2914.swift */,
 				9B9F46F529E4F978008E0800 /* 2922.swift */,
 				9B9F461B29CB1EFA008E0800 /* 2933.swift */,
@@ -1303,12 +1316,6 @@
 				9BE938B22A1C6F5400A5777B /* 4307.swift */,
 				9BE938B32A1CB23700A5777B /* 4485.swift */,
 				9B2EFE70294ACB9F00B02A4E /* 4963.swift */,
-				9BA92CC02A2B1D77003796C6 /* 2910.swift */,
-				9BA92CD42A2DA5EA003796C6 /* 2457.swift */,
-				9BA92CD82A2DFBD7003796C6 /* 2170.swift */,
-				9BB1D2122A32111500BC06F9 /* 2230.swift */,
-				9BB1D2182A32E24A00BC06F9 /* 2003.swift */,
-				9BB1D21D2A3561AF00BC06F9 /* 2531.swift */,
 			);
 			path = 2000;
 			sourceTree = "<group>";
@@ -1858,9 +1865,21 @@
 				9BB1D2152A32BC0200BC06F9 /* 1806.py */,
 				9BB1D2162A32D67500BC06F9 /* 1644.py */,
 				9BB1D21C2A34B7E300BC06F9 /* 22862.py */,
+				9BB1D21E2A36D9D500BC06F9 /* 2531.py */,
+				9BB1D21F2A36DCB400BC06F9 /* 20922.py */,
 			);
 			name = "투포인터";
 			path = "투포인터";
+			sourceTree = "<group>";
+		};
+		9BB1D2202A36DFB200BC06F9 /* 해시 */ = {
+			isa = PBXGroup;
+			children = (
+				9BB1D2212A36DFC500BC06F9 /* 7785.py */,
+				9BB1D2222A36E49B00BC06F9 /* 13414.py */,
+			);
+			name = "해시";
+			path = "해시";
 			sourceTree = "<group>";
 		};
 		9BFCBB0728AC6AFB00B52A7C /* KakaoProgrammers */ = {
