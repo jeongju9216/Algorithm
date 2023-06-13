@@ -1,3 +1,10 @@
+//
+//  1351.swift
+//  Algorithm
+//
+//  Created by 유정주 on 2023/06/13.
+//
+
 import Foundation
 
 func dfs(_ num: Int) -> Int {

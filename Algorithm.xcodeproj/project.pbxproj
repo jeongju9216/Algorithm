@@ -632,6 +632,13 @@
 		9BB1D2212A36DFC500BC06F9 /* 7785.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 7785.py; sourceTree = "<group>"; };
 		9BB1D2222A36E49B00BC06F9 /* 13414.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 13414.py; sourceTree = "<group>"; };
 		9BB1D2232A36E4AA00BC06F9 /* 13414.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13414.swift; sourceTree = "<group>"; };
+		9BB1D2242A3891EB00BC06F9 /* 17219.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17219.swift; sourceTree = "<group>"; };
+		9BB1D2252A3892D100BC06F9 /* 17219.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 17219.py; sourceTree = "<group>"; };
+		9BB1D2262A3895F300BC06F9 /* 9357.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9357.swift; sourceTree = "<group>"; };
+		9BB1D2272A389CED00BC06F9 /* 20166.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20166.swift; sourceTree = "<group>"; };
+		9BB1D2282A38A0EC00BC06F9 /* 20166.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 20166.py; sourceTree = "<group>"; };
+		9BB1D2292A38A71C00BC06F9 /* 1351.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1351.swift; sourceTree = "<group>"; };
+		9BB1D22A2A38A88E00BC06F9 /* 1351.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1351.py; sourceTree = "<group>"; };
 		9BC9619A28E32CC500DBF323 /* 1688.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1688.swift; sourceTree = "<group>"; };
 		9BC9619B28E32E4D00DBF323 /* 832.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 832.swift; sourceTree = "<group>"; };
 		9BC9619C28E3CD6E00DBF323 /* 2221.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2221.swift; sourceTree = "<group>"; };
@@ -1144,6 +1151,7 @@
 				9BA92CCF2A2D6FF6003796C6 /* 1026.swift */,
 				9BA92CD62A2DBA24003796C6 /* 1744.swift */,
 				9BB1D2172A32D68200BC06F9 /* 1644.swift */,
+				9BB1D2292A38A71C00BC06F9 /* 1351.swift */,
 			);
 			path = 1000;
 			sourceTree = "<group>";
@@ -1213,6 +1221,7 @@
 				9BA3E4342A2F6968001D6C49 /* 11000.swift */,
 				9BB1D2192A3352D200BC06F9 /* 13144.swift */,
 				9BB1D2232A36E4AA00BC06F9 /* 13414.swift */,
+				9BB1D2262A3895F300BC06F9 /* 9357.swift */,
 			);
 			path = 10000;
 			sourceTree = "<group>";
@@ -1342,6 +1351,7 @@
 				9B9F46A929D52809008E0800 /* 22862.swift */,
 				9B9F46F229E425F0008E0800 /* 22944.swift */,
 				9B811E832A08CE00008A660E /* 25206.swift */,
+				9BB1D2272A389CED00BC06F9 /* 20166.swift */,
 			);
 			path = 20000;
 			sourceTree = "<group>";
@@ -1641,6 +1651,7 @@
 				9B9F46DB29E1644C008E0800 /* 19236.swift */,
 				9B9F46EE29E3E004008E0800 /* 19699.swift */,
 				9B9F46E929E3BFEB008E0800 /* 19949.swift */,
+				9BB1D2242A3891EB00BC06F9 /* 17219.swift */,
 			);
 			path = 15000;
 			sourceTree = "<group>";
@@ -1877,6 +1888,9 @@
 			children = (
 				9BB1D2212A36DFC500BC06F9 /* 7785.py */,
 				9BB1D2222A36E49B00BC06F9 /* 13414.py */,
+				9BB1D2252A3892D100BC06F9 /* 17219.py */,
+				9BB1D2282A38A0EC00BC06F9 /* 20166.py */,
+				9BB1D22A2A38A88E00BC06F9 /* 1351.py */,
 			);
 			name = "해시";
 			path = "해시";
