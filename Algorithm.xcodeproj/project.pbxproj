@@ -645,6 +645,8 @@
 		9BB1D22F2A39890000BC06F9 /* 1149.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1149.py; sourceTree = "<group>"; };
 		9BB1D2302A398ECB00BC06F9 /* 11659.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11659.swift; sourceTree = "<group>"; };
 		9BB1D2312A39953500BC06F9 /* 12852.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12852.swift; sourceTree = "<group>"; };
+		9BB1D2322A39E97B00BC06F9 /* 1003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1003.swift; sourceTree = "<group>"; };
+		9BB1D2332A39EFD000BC06F9 /* 1932.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1932.py; sourceTree = "<group>"; };
 		9BC9619A28E32CC500DBF323 /* 1688.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1688.swift; sourceTree = "<group>"; };
 		9BC9619B28E32E4D00DBF323 /* 832.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 832.swift; sourceTree = "<group>"; };
 		9BC9619C28E3CD6E00DBF323 /* 2221.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2221.swift; sourceTree = "<group>"; };
@@ -1159,6 +1161,7 @@
 				9BA92CD62A2DBA24003796C6 /* 1744.swift */,
 				9BB1D2172A32D68200BC06F9 /* 1644.swift */,
 				9BB1D2292A38A71C00BC06F9 /* 1351.swift */,
+				9BB1D2322A39E97B00BC06F9 /* 1003.swift */,
 			);
 			path = 1000;
 			sourceTree = "<group>";
@@ -1912,6 +1915,7 @@
 				9BB1D22D2A394AA300BC06F9 /* 9095.py */,
 				9BB1D22E2A394DCD00BC06F9 /* 2579.py */,
 				9BB1D22F2A39890000BC06F9 /* 1149.py */,
+				9BB1D2332A39EFD000BC06F9 /* 1932.py */,
 			);
 			name = DP;
 			path = "예";
