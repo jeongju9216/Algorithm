@@ -647,6 +647,8 @@
 		9BB1D2312A39953500BC06F9 /* 12852.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12852.swift; sourceTree = "<group>"; };
 		9BB1D2322A39E97B00BC06F9 /* 1003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1003.swift; sourceTree = "<group>"; };
 		9BB1D2332A39EFD000BC06F9 /* 1932.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1932.py; sourceTree = "<group>"; };
+		9BB1D2342A3B50E900BC06F9 /* 2870.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2870.swift; sourceTree = "<group>"; };
+		9BB1D2382A3B513800BC06F9 /* 2870.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2870.py; sourceTree = "<group>"; };
 		9BC9619A28E32CC500DBF323 /* 1688.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1688.swift; sourceTree = "<group>"; };
 		9BC9619B28E32E4D00DBF323 /* 832.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 832.swift; sourceTree = "<group>"; };
 		9BC9619C28E3CD6E00DBF323 /* 2221.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2221.swift; sourceTree = "<group>"; };
@@ -1091,6 +1093,7 @@
 				9BB1D2132A32134D00BC06F9 /* 투포인터 */,
 				9BB1D2202A36DFB200BC06F9 /* 해시 */,
 				9BB1D22B2A3948FA00BC06F9 /* DP */,
+				9BB1D2352A3B50FE00BC06F9 /* 문자열 */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
@@ -1337,6 +1340,7 @@
 				9BE938B22A1C6F5400A5777B /* 4307.swift */,
 				9BE938B32A1CB23700A5777B /* 4485.swift */,
 				9B2EFE70294ACB9F00B02A4E /* 4963.swift */,
+				9BB1D2342A3B50E900BC06F9 /* 2870.swift */,
 			);
 			path = 2000;
 			sourceTree = "<group>";
@@ -1919,6 +1923,15 @@
 			);
 			name = DP;
 			path = "예";
+			sourceTree = "<group>";
+		};
+		9BB1D2352A3B50FE00BC06F9 /* 문자열 */ = {
+			isa = PBXGroup;
+			children = (
+				9BB1D2382A3B513800BC06F9 /* 2870.py */,
+			);
+			name = "문자열";
+			path = "문자열";
 			sourceTree = "<group>";
 		};
 		9BFCBB0728AC6AFB00B52A7C /* KakaoProgrammers */ = {
