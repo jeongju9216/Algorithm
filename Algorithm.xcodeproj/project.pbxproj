@@ -375,6 +375,17 @@
 		9B42D4C8290FAF580053DBF3 /* 1832.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1832.swift; sourceTree = "<group>"; };
 		9B42D4C92910E6050053DBF3 /* 1967.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1967.swift; sourceTree = "<group>"; };
 		9B42D4CA2910E7820053DBF3 /* 1572.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1572.swift; sourceTree = "<group>"; };
+		9B6C3AD32A3C095C003D5E45 /* 1543.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1543.py; sourceTree = "<group>"; };
+		9B6C3AD42A3C0966003D5E45 /* 1543.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1543.swift; sourceTree = "<group>"; };
+		9B6C3AD52A3C10F8003D5E45 /* 2941.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2941.swift; sourceTree = "<group>"; };
+		9B6C3AD62A3C1D03003D5E45 /* 9996.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9996.swift; sourceTree = "<group>"; };
+		9B6C3AD72A3C2941003D5E45 /* 1969.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1969.swift; sourceTree = "<group>"; };
+		9B6C3AD82A3C3169003D5E45 /* 9536.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9536.swift; sourceTree = "<group>"; };
+		9B6C3AD92A3C4357003D5E45 /* 3107.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3107.swift; sourceTree = "<group>"; };
+		9B6C3ADA2A3C4B38003D5E45 /* 16719.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 16719.py; sourceTree = "<group>"; };
+		9B6C3ADB2A3C63AA003D5E45 /* 23304.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 23304.py; sourceTree = "<group>"; };
+		9B6C3ADC2A3C6C6A003D5E45 /* 23304.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 23304.swift; sourceTree = "<group>"; };
+		9B6C3ADE2A3C82D1003D5E45 /* 17413.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 17413.py; sourceTree = "<group>"; };
 		9B6CF91627C32FD1007384B2 /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7D6795285C90BA0094C304 /* CyclicRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicRotation.swift; sourceTree = "<group>"; };
 		9B7D6797285CAB620094C304 /* OddOccurrencesInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddOccurrencesInArray.swift; sourceTree = "<group>"; };
@@ -1165,6 +1176,8 @@
 				9BB1D2172A32D68200BC06F9 /* 1644.swift */,
 				9BB1D2292A38A71C00BC06F9 /* 1351.swift */,
 				9BB1D2322A39E97B00BC06F9 /* 1003.swift */,
+				9B6C3AD42A3C0966003D5E45 /* 1543.swift */,
+				9B6C3AD72A3C2941003D5E45 /* 1969.swift */,
 			);
 			path = 1000;
 			sourceTree = "<group>";
@@ -1271,6 +1284,8 @@
 				9BE9388D2A1B3A1D00A5777B /* 9663.swift */,
 				9B2EFE2B294ACB7700B02A4E /* 9935.swift */,
 				9BA92CC52A2B4A6A003796C6 /* 7795.swift */,
+				9B6C3AD62A3C1D03003D5E45 /* 9996.swift */,
+				9B6C3AD82A3C3169003D5E45 /* 9536.swift */,
 			);
 			path = 5000;
 			sourceTree = "<group>";
@@ -1341,6 +1356,8 @@
 				9BE938B32A1CB23700A5777B /* 4485.swift */,
 				9B2EFE70294ACB9F00B02A4E /* 4963.swift */,
 				9BB1D2342A3B50E900BC06F9 /* 2870.swift */,
+				9B6C3AD52A3C10F8003D5E45 /* 2941.swift */,
+				9B6C3AD92A3C4357003D5E45 /* 3107.swift */,
 			);
 			path = 2000;
 			sourceTree = "<group>";
@@ -1368,6 +1385,7 @@
 				9B9F46F229E425F0008E0800 /* 22944.swift */,
 				9B811E832A08CE00008A660E /* 25206.swift */,
 				9BB1D2272A389CED00BC06F9 /* 20166.swift */,
+				9B6C3ADC2A3C6C6A003D5E45 /* 23304.swift */,
 			);
 			path = 20000;
 			sourceTree = "<group>";
@@ -1929,6 +1947,10 @@
 			isa = PBXGroup;
 			children = (
 				9BB1D2382A3B513800BC06F9 /* 2870.py */,
+				9B6C3AD32A3C095C003D5E45 /* 1543.py */,
+				9B6C3ADA2A3C4B38003D5E45 /* 16719.py */,
+				9B6C3ADB2A3C63AA003D5E45 /* 23304.py */,
+				9B6C3ADE2A3C82D1003D5E45 /* 17413.py */,
 			);
 			name = "문자열";
 			path = "문자열";
