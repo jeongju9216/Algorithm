@@ -386,6 +386,7 @@
 		9B6C3ADB2A3C63AA003D5E45 /* 23304.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 23304.py; sourceTree = "<group>"; };
 		9B6C3ADC2A3C6C6A003D5E45 /* 23304.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 23304.swift; sourceTree = "<group>"; };
 		9B6C3ADE2A3C82D1003D5E45 /* 17413.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 17413.py; sourceTree = "<group>"; };
+		9B6C3ADF2A3DE90A003D5E45 /* 15683.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15683.swift; sourceTree = "<group>"; };
 		9B6CF91627C32FD1007384B2 /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7D6795285C90BA0094C304 /* CyclicRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicRotation.swift; sourceTree = "<group>"; };
 		9B7D6797285CAB620094C304 /* OddOccurrencesInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddOccurrencesInArray.swift; sourceTree = "<group>"; };
@@ -1686,6 +1687,7 @@
 				9B9F46EE29E3E004008E0800 /* 19699.swift */,
 				9B9F46E929E3BFEB008E0800 /* 19949.swift */,
 				9BB1D2242A3891EB00BC06F9 /* 17219.swift */,
+				9B6C3ADF2A3DE90A003D5E45 /* 15683.swift */,
 			);
 			path = 15000;
 			sourceTree = "<group>";
