@@ -375,6 +375,12 @@
 		9B42D4C8290FAF580053DBF3 /* 1832.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1832.swift; sourceTree = "<group>"; };
 		9B42D4C92910E6050053DBF3 /* 1967.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1967.swift; sourceTree = "<group>"; };
 		9B42D4CA2910E7820053DBF3 /* 1572.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1572.swift; sourceTree = "<group>"; };
+		9B63F8E62A443F61007F0C27 /* 17298.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 17298.py; sourceTree = "<group>"; };
+		9B63F8E72A44417D007F0C27 /* 17298.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17298.swift; sourceTree = "<group>"; };
+		9B63F8E82A451DDF007F0C27 /* 10814.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10814.swift; sourceTree = "<group>"; };
+		9B63F8E92A453AA0007F0C27 /* 2461.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2461.swift; sourceTree = "<group>"; };
+		9B63F8EA2A454B64007F0C27 /* 16165.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16165.swift; sourceTree = "<group>"; };
+		9B63F8EB2A454DDF007F0C27 /* 11478.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11478.swift; sourceTree = "<group>"; };
 		9B6C3AD32A3C095C003D5E45 /* 1543.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1543.py; sourceTree = "<group>"; };
 		9B6C3AD42A3C0966003D5E45 /* 1543.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1543.swift; sourceTree = "<group>"; };
 		9B6C3AD52A3C10F8003D5E45 /* 2941.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2941.swift; sourceTree = "<group>"; };
@@ -1253,6 +1259,8 @@
 				9BB1D2262A3895F300BC06F9 /* 9357.swift */,
 				9BB1D2302A398ECB00BC06F9 /* 11659.swift */,
 				9BB1D2312A39953500BC06F9 /* 12852.swift */,
+				9B63F8E82A451DDF007F0C27 /* 10814.swift */,
+				9B63F8EB2A454DDF007F0C27 /* 11478.swift */,
 			);
 			path = 10000;
 			sourceTree = "<group>";
@@ -1362,6 +1370,7 @@
 				9BB1D2342A3B50E900BC06F9 /* 2870.swift */,
 				9B6C3AD52A3C10F8003D5E45 /* 2941.swift */,
 				9B6C3AD92A3C4357003D5E45 /* 3107.swift */,
+				9B63F8E92A453AA0007F0C27 /* 2461.swift */,
 			);
 			path = 2000;
 			sourceTree = "<group>";
@@ -1692,6 +1701,8 @@
 				9BB1D2242A3891EB00BC06F9 /* 17219.swift */,
 				9B6C3ADF2A3DE90A003D5E45 /* 15683.swift */,
 				9B6C3AE02A3EBD0B003D5E45 /* 18808.swift */,
+				9B63F8E72A44417D007F0C27 /* 17298.swift */,
+				9B63F8EA2A454B64007F0C27 /* 16165.swift */,
 			);
 			path = 15000;
 			sourceTree = "<group>";
@@ -1851,6 +1862,7 @@
 				9B4242FB2A20EC9F000EA747 /* 10828.py */,
 				9B4242FC2A20F36C000EA747 /* 1874.py */,
 				9B4243042A219DB1000EA747 /* 2493.py */,
+				9B63F8E62A443F61007F0C27 /* 17298.py */,
 			);
 			name = "스택";
 			path = "스택";
