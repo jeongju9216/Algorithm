@@ -806,9 +806,6 @@
 		9BF5C1172907EF0200C74624 /* 1295.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1295.swift; sourceTree = "<group>"; };
 		9BF5C1182907EF1F00C74624 /* 2185.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2185.swift; sourceTree = "<group>"; };
 		9BF5C119290921ED00C74624 /* 200.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 200.swift; sourceTree = "<group>"; };
-		9BFCBB0828AC6C2900B52A7C /* 신고_결과_받기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "신고_결과_받기.swift"; sourceTree = "<group>"; };
-		9BFCBB0A28AC73B900B52A7C /* 신규_아이디_추천.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "신규_아이디_추천.swift"; sourceTree = "<group>"; };
-		9BFCBB0C28AC82E000B52A7C /* 실패율.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "실패율.swift"; sourceTree = "<group>"; };
 		9BFDF7112A110E45005E3953 /* 1106.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1106.swift; sourceTree = "<group>"; };
 		9BFDF71A2A127C64005E3953 /* 16918.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16918.swift; sourceTree = "<group>"; };
 		9BFDF72F2A13B8B8005E3953 /* 1374.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1374.swift; sourceTree = "<group>"; };
@@ -1076,6 +1073,7 @@
 		9B2EFDFC294ACB1E00B02A4E /* BOJ */ = {
 			isa = PBXGroup;
 			children = (
+				9B83DC112A49ABA40073FBBC /* 문제집 */,
 				9B4242FE2A219AED000EA747 /* 1000 */,
 				9B4243022A219B67000EA747 /* 2000 */,
 				9B4243012A219B35000EA747 /* 5000 */,
@@ -1426,7 +1424,6 @@
 				9B2EFEA7294AD54000B02A4E /* main.swift */,
 				9B2EFDFC294ACB1E00B02A4E /* BOJ */,
 				9B2EFCD3293E2CB000B02A4E /* Programmers */,
-				9BFCBB0728AC6AFB00B52A7C /* KakaoProgrammers */,
 				9B90AB2F2890CCD3004B2A06 /* LeetCode */,
 				9B7D6794285C90990094C304 /* Codility */,
 			);
@@ -1454,6 +1451,165 @@
 				9B7D67B2285EA6440094C304 /* Triangle.swift */,
 			);
 			path = Codility;
+			sourceTree = "<group>";
+		};
+		9B83DC112A49ABA40073FBBC /* 문제집 */ = {
+			isa = PBXGroup;
+			children = (
+				9B83DC232A49AC320073FBBC /* 배열 */,
+				9B83DC222A49AC2F0073FBBC /* 연결리스트 */,
+				9B83DC212A49AC080073FBBC /* 스택 */,
+				9B83DC202A49ABFF0073FBBC /* 큐 */,
+				9B83DC1F2A49ABFB0073FBBC /* 덱 */,
+				9B83DC1E2A49ABF50073FBBC /* BFS */,
+				9B83DC1D2A49ABE40073FBBC /* 재귀 */,
+				9B83DC1C2A49ABE10073FBBC /* 백트래킹 */,
+				9B83DC1B2A49ABD30073FBBC /* 시뮬레이션 */,
+				9B83DC1A2A49ABD20073FBBC /* 정렬 */,
+				9B83DC162A49ABC30073FBBC /* DP */,
+				9B83DC192A49ABD00073FBBC /* 그리디 */,
+				9B83DC242A49AC4B0073FBBC /* 이분탐색 */,
+				9B83DC182A49ABCD0073FBBC /* 투포인터 */,
+				9B83DC172A49ABCB0073FBBC /* 해시 */,
+				9B83DC252A49B3C80073FBBC /* 그래프 */,
+				9B83DC142A49ABB60073FBBC /* 문자열 */,
+			);
+			name = "문제집";
+			path = "문제집";
+			sourceTree = "<group>";
+		};
+		9B83DC142A49ABB60073FBBC /* 문자열 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "문자열";
+			path = "배열";
+			sourceTree = "<group>";
+		};
+		9B83DC162A49ABC30073FBBC /* DP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DP;
+			sourceTree = "<group>";
+		};
+		9B83DC172A49ABCB0073FBBC /* 해시 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "해시";
+			path = "해시";
+			sourceTree = "<group>";
+		};
+		9B83DC182A49ABCD0073FBBC /* 투포인터 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "투포인터";
+			path = "투포인터";
+			sourceTree = "<group>";
+		};
+		9B83DC192A49ABD00073FBBC /* 그리디 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "그리디";
+			path = "그리디";
+			sourceTree = "<group>";
+		};
+		9B83DC1A2A49ABD20073FBBC /* 정렬 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "정렬";
+			path = "정렬";
+			sourceTree = "<group>";
+		};
+		9B83DC1B2A49ABD30073FBBC /* 시뮬레이션 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "시뮬레이션";
+			path = "시뮬레이션";
+			sourceTree = "<group>";
+		};
+		9B83DC1C2A49ABE10073FBBC /* 백트래킹 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "백트래킹";
+			path = "백트래킹";
+			sourceTree = "<group>";
+		};
+		9B83DC1D2A49ABE40073FBBC /* 재귀 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "재귀";
+			path = "재귀";
+			sourceTree = "<group>";
+		};
+		9B83DC1E2A49ABF50073FBBC /* BFS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BFS;
+			sourceTree = "<group>";
+		};
+		9B83DC1F2A49ABFB0073FBBC /* 덱 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "덱";
+			path = "스택";
+			sourceTree = "<group>";
+		};
+		9B83DC202A49ABFF0073FBBC /* 큐 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "큐";
+			path = "덱";
+			sourceTree = "<group>";
+		};
+		9B83DC212A49AC080073FBBC /* 스택 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "스택";
+			path = "스택";
+			sourceTree = "<group>";
+		};
+		9B83DC222A49AC2F0073FBBC /* 연결리스트 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "연결리스트";
+			path = "연결리스트";
+			sourceTree = "<group>";
+		};
+		9B83DC232A49AC320073FBBC /* 배열 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "배열";
+			path = "배열";
+			sourceTree = "<group>";
+		};
+		9B83DC242A49AC4B0073FBBC /* 이분탐색 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "이분탐색";
+			path = "이분탐색";
+			sourceTree = "<group>";
+		};
+		9B83DC252A49B3C80073FBBC /* 그래프 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "그래프";
+			path = "그래프";
 			sourceTree = "<group>";
 		};
 		9B90AB2F2890CCD3004B2A06 /* LeetCode */ = {
@@ -1972,16 +2128,6 @@
 			);
 			name = "문자열";
 			path = "문자열";
-			sourceTree = "<group>";
-		};
-		9BFCBB0728AC6AFB00B52A7C /* KakaoProgrammers */ = {
-			isa = PBXGroup;
-			children = (
-				9BFCBB0828AC6C2900B52A7C /* 신고_결과_받기.swift */,
-				9BFCBB0A28AC73B900B52A7C /* 신규_아이디_추천.swift */,
-				9BFCBB0C28AC82E000B52A7C /* 실패율.swift */,
-			);
-			path = KakaoProgrammers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
