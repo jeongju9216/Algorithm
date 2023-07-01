@@ -395,6 +395,8 @@
 		9B6C3ADF2A3DE90A003D5E45 /* 15683.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15683.swift; sourceTree = "<group>"; };
 		9B6C3AE02A3EBD0B003D5E45 /* 18808.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 18808.swift; sourceTree = "<group>"; };
 		9B6CF91627C32FD1007384B2 /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B7639412A5036290099B94C /* 17298.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17298.swift; sourceTree = "<group>"; };
+		9B7639422A50380A0099B94C /* 2164.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2164.swift; sourceTree = "<group>"; };
 		9B7D6795285C90BA0094C304 /* CyclicRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicRotation.swift; sourceTree = "<group>"; };
 		9B7D6797285CAB620094C304 /* OddOccurrencesInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddOccurrencesInArray.swift; sourceTree = "<group>"; };
 		9B7D6799285CB9E80094C304 /* FrogJmp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogJmp.swift; sourceTree = "<group>"; };
@@ -1576,6 +1578,7 @@
 		9B83DC202A49ABFF0073FBBC /* 큐 */ = {
 			isa = PBXGroup;
 			children = (
+				9B7639422A50380A0099B94C /* 2164.swift */,
 			);
 			name = "큐";
 			path = "덱";
@@ -1588,6 +1591,7 @@
 				9B83DC2C2A4BE4700073FBBC /* 1874.swift */,
 				9B83DC2D2A4BE92E0073FBBC /* 2493.swift */,
 				9B83DC312A4C4A620073FBBC /* 6198.swift */,
+				9B7639412A5036290099B94C /* 17298.swift */,
 			);
 			name = "스택";
 			path = "스택";
