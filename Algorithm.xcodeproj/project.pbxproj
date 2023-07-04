@@ -399,6 +399,7 @@
 		9B7639422A50380A0099B94C /* 2164.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2164.swift; sourceTree = "<group>"; };
 		9B7639522A52A42E0099B94C /* 1021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1021.swift; sourceTree = "<group>"; };
 		9B7639532A52AF950099B94C /* 5430.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5430.swift; sourceTree = "<group>"; };
+		9B7639542A53DD480099B94C /* 4949.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4949.swift; sourceTree = "<group>"; };
 		9B7D6795285C90BA0094C304 /* CyclicRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicRotation.swift; sourceTree = "<group>"; };
 		9B7D6797285CAB620094C304 /* OddOccurrencesInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddOccurrencesInArray.swift; sourceTree = "<group>"; };
 		9B7D6799285CB9E80094C304 /* FrogJmp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogJmp.swift; sourceTree = "<group>"; };
@@ -1596,6 +1597,7 @@
 				9B83DC2D2A4BE92E0073FBBC /* 2493.swift */,
 				9B83DC312A4C4A620073FBBC /* 6198.swift */,
 				9B7639412A5036290099B94C /* 17298.swift */,
+				9B7639542A53DD480099B94C /* 4949.swift */,
 			);
 			name = "스택";
 			path = "스택";
