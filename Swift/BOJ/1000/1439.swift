@@ -7,18 +7,10 @@
 
 import Foundation
 
-let arr = readLine()!.map { Int(String($0))! }
+//하나로 split 해서 적은 수인거 개수
 
-var dict: [Int: Int] = [0: 0, 1: 0]
-for i in 0..<arr.count {
-    if i == 0 {
-        dict[arr[i]]! += 1
-        continue
-    }
-    
-    if arr[i-1] != arr[i] {
-        dict[arr[i]]! += 1
-    }
-}
+let input = readLine()!
+let cnt1 = input.split { $0 == "0" }.count
+let cnt2 = input.split { $0 == "1" }.count
 
-print(dict.values.min()!)
+print(min(cnt1, cnt2))

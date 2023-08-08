@@ -2,15 +2,15 @@
 //  10816.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/05/17.
+//  Created by 유정주 on 2023/08/08.
 //
 
 import Foundation
 
 let n = Int(readLine()!)!
-let cards = readLine()!.split { $0 == " " }.map { Int($0)! }.sorted()
+let cards = readLine()!.split { $0 == " " }.map { Int(String($0))! }
 let m = Int(readLine()!)!
-let arr = readLine()!.split { $0 == " " }.map { Int($0)! }
+let arr = readLine()!.split { $0 == " " }.map { Int(String($0))! }
 
 var dict: [Int: Int] = [:]
 for card in cards {
@@ -22,6 +22,4 @@ for num in arr {
     result.append(dict[num] ?? 0)
 }
 
-for num in result {
-    print(num, terminator: " ")
-}
+result.forEach { print($0, terminator: " ") }
