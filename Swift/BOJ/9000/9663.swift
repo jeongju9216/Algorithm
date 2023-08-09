@@ -2,19 +2,10 @@
 //  9663.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/05/22.
+//  Created by 유정주 on 2023/08/09.
 //
 
 import Foundation
-
-func check(_ row: Int, _ col: Int) -> Bool {
-    if cols[col] || diagonal1[row+col] || diagonal2[row-col+n-1] {
-        return false
-    }
-    
-    return true
-}
-
 
 func dfs(_ row: Int) {
     if row == n {
@@ -23,16 +14,19 @@ func dfs(_ row: Int) {
     }
     
     for col in 0..<n {
-        if check(row, col) {
+        let d1 = row + col
+        let d2 = row - col + n - 1
+        
+        if !(cols[col] || diagonal1[d1] || diagonal2[d2]) {
             cols[col] = true
-            diagonal1[row+col] = true
-            diagonal2[row-col+n-1] = true
+            diagonal1[d1] = true
+            diagonal2[d2] = true
             
             dfs(row+1)
             
             cols[col] = false
-            diagonal1[row+col] = false
-            diagonal2[row-col+n-1] = false
+            diagonal1[d1] = false
+            diagonal2[d2] = false
         }
     }
 }

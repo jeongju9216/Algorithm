@@ -2,22 +2,22 @@
 //  1789.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/05/18.
+//  Created by 유정주 on 2023/08/09.
 //
 
 import Foundation
 
-let s = Int(readLine()!)!
+let n = Int(readLine()!)!
 
-var sum = 0, count = 0
-while sum < s {
-    count += 1
-    sum += count
+var num = 0
+var sum = 0
+while sum < n {
+    num += 1
+    sum += num
 }
 
-if sum == s {
-    print(count)
+if sum == n {
+    print(num)
 } else {
-    print(count - 1)
+    print(num - 1)
 }
-

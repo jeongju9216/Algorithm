@@ -2,47 +2,43 @@
 //  2630.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/05/22.
+//  Created by 유정주 on 2023/08/09.
 //
 
 import Foundation
 
-func quard(_ size: Int, _ x: Int, _ y: Int) {
+func quard(_ x: Int, _ y: Int, _ size: Int) {
     let half = size / 2
-    let item = map[x][y]
-    
-    var canPaper = true
-    
-    for i in x..<x+size where canPaper {
+    var item = map[x][y]
+    var isQuard = false
+    for i in x..<x+size {
         for j in y..<y+size {
-            if map[i][j] != item {
-                canPaper = false
-                break
+            guard item != map[i][j] else {
+                continue
             }
+            
+            quard(x, y, half)
+            quard(x + half, y, half)
+            quard(x, y + half, half)
+            quard(x + half, y + half, half)
+            return
         }
     }
-    
-    if canPaper {
-        result[item] += 1
+
+    if item == 1 {
+        blue += 1
     } else {
-        quard(half, x, y)
-        quard(half, x + half, y)
-        quard(half, x, y + half)
-        quard(half, x + half, y + half)
+        white += 1
     }
 }
 
 let n = Int(readLine()!)!
-
 var map: [[Int]] = []
 for _ in 0..<n {
-    let input = readLine()!.split { $0 == " " }.map { Int($0)! }
-    map.append(input)
+    map.append(readLine()!.split { $0 == " " }.map { Int(String($0))! })
 }
 
-var result: [Int] = [0, 0]
-
-quard(n, 0, 0)
-
-print(result[0])
-print(result[1])
+var blue = 0, white = 0
+quard(0, 0, n)
+print(white)
+print(blue)

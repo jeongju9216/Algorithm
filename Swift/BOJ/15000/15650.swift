@@ -7,27 +7,22 @@
 
 import Foundation
 
-func dfs(_ current: Set<Int>) {
+func dfs(_ current: [Int], _ num: Int) {
     if current.count == m {
-        for num in current.sorted() {
-            print(num, terminator: " ")
-        }
-        print("")
-        
+        print(current.map { "\($0)" }.joined(separator: " "))
         return
     }
     
-    var current = current
-    for i in (current.max() ?? 1)...n {
-        if !current.contains(i) {
-            current.insert(i)
-            dfs(current)
-            current.remove(i)
+    for i in num...n {
+        if current.contains(i) {
+            continue
         }
+        
+        dfs(current + [i], i)
     }
 }
 
-let nm = readLine()!.components(separatedBy: " ").map { Int($0)! }
-let n = nm[0], m = nm[1]
+let nm = readLine()!.split { $0 == " " }.map { Int(String($0))! }
+let (n, m) = (nm[0], nm[1])
 
-dfs([])
+dfs([], 1)

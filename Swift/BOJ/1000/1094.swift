@@ -2,24 +2,27 @@
 //  1094.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/05/23.
+//  Created by 유정주 on 2023/08/09.
 //
 
 import Foundation
 
 let x = Int(readLine()!)!
+var arr = [64]
 
-var sticks: [Int] = [64]
-while sticks.reduce(0, +) > x {
-//    sticks.sort()
-    let shortest = sticks.removeLast()
-    
-    if sticks.reduce(0, +) + shortest / 2 >= x {
-        sticks.append(shortest / 2)
+while true {
+    let sum = arr.reduce(0, +)
+    if sum == x {
+        break
+    }
+        
+    let minItem = arr.removeLast()
+    let half = minItem / 2
+    if sum - minItem + half >= x {
+        arr += [half]
     } else {
-        sticks.append(shortest / 2)
-        sticks.append(shortest / 2)
+        arr += [half, half]
     }
 }
 
-print(sticks.count)
+print(arr.count)

@@ -8,22 +8,21 @@
 import Foundation
 
 func dfs(_ current: [Int]) {
-    guard current.count < m else {
-        for num in current {
-            print(num, terminator: " ")
-        }
-        print("")
+    if current.count == m {
+        print(current.map { "\($0)" }.joined(separator: " "))
         return
     }
     
     for i in 1...n {
-        if !current.contains(i) {
-            dfs(current + [i])
+        if current.contains(i) {
+            continue
         }
+        
+        dfs(current + [i])
     }
 }
 
-let nm = readLine()!.components(separatedBy: " ").map { Int($0)! }
-let n = nm[0], m = nm[1]
+let nm = readLine()!.split { $0 == " " }.map { Int(String($0))! }
+let (n, m) = (nm[0], nm[1])
 
 dfs([])
