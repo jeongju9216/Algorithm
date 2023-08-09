@@ -2,29 +2,33 @@
 //  3040.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/05/18.
+//  Created by 유정주 on 2023/08/09.
 //
 
 import Foundation
 
-var arr: [Int] = []
-for _ in 0..<9 {
-    let input = Int(readLine()!)!
-    arr.append(input)
-}
-
-let sum = arr.reduce(0, +)
-var deleteIndex: [Int] = []
-for i in 0..<9 where deleteIndex.isEmpty {
-    for j in (i+1)..<9 {
-        if sum - (arr[i] + arr[j]) == 100 {
-            deleteIndex.append(i)
-            deleteIndex.append(j)
-            break
+func recursive(_ current: [Int], _ depth: Int) {
+    if !result.isEmpty {
+        return
+    }
+    
+    if current.count == 7 {
+        if current.reduce(0, +) == 100 {
+            result = current
         }
+        return
+    }
+    
+    for i in depth+1..<9 {
+        recursive(current + [arr[i]], i)
     }
 }
 
-for i in 0..<9 where !deleteIndex.contains(i) {
-    print("\(arr[i])")
+var result: [Int] = []
+var arr: [Int] = []
+for _ in 0..<9 {
+    arr.append(Int(readLine()!)!)
 }
+
+recursive([], -1)
+result.forEach { print($0) }
