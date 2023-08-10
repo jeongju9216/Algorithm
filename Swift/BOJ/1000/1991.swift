@@ -2,37 +2,36 @@
 //  1991.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2022/04/04.
+//  Created by 유정주 on 2022/08/10.
 //
 
-//1991 트리 순회
 import Foundation
 
 func dfs(_ node: String) {
-    let left = graph[node]![0]
-    let right = graph[node]![1]
+    result[0] += node
     
-    results[0] += node
-    if left != "." {
-        dfs(left)
+    if graph[node]![0] != "." {
+        dfs(graph[node]![0])
     }
-    results[1] += node
-    if right != "." {
-        dfs(right)
+    
+    result[1] += node
+    
+    if graph[node]![1] != "." {
+        dfs(graph[node]![1])
     }
-    results[2] += node
+    
+    result[2] += node
 }
- 
+
 let n = Int(readLine()!)!
 var graph: [String: [String]] = [:]
 for _ in 0..<n {
-    let input = readLine()!.split { $0 == " " }.map { String($0) }
-    graph[input[0]] = [input[1], input[2]]
+    let arr = readLine()!.split { $0 == " " }.map { String($0) }
+    graph[arr[0]] = [arr[1], arr[2]]
 }
 
-var results: [String] = ["", "", ""]
+var result: [String] = ["", "", ""]
+
 dfs("A")
 
-for result in results {
-    print(result)
-}
+print(result.joined(separator: "\n"))

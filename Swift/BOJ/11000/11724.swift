@@ -2,44 +2,34 @@
 //  main.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2022/03/25.
+//  Created by 유정주 on 2023/08/10.
 //
 
-//11724 연결 요소의 개수
 import Foundation
 
-let inputs = readLine()!.split(separator: " ").map { Int(String($0))! }
-let edges = inputs[0]
-let lines = inputs[1]
+let nm = readLine()!.split { $0 == " " }.map { Int(String($0))! }
+let n = nm[0], m = nm[1]
 
 var graph: [Int: [Int]] = [:]
-var visitNode: [Int] = []
-var needVisitNode: [Int] = []
-
-for edge in 1...edges {
-    graph.updateValue([], forKey: edge)
+for _ in 0..<m {
+    let arr = readLine()!.split { $0 == " " }.map { Int(String($0))! }
+    graph[arr[0], default: []].append(arr[1])
+    graph[arr[1], default: []].append(arr[0])
 }
 
-for _ in 0..<lines {
-    let input = readLine()!.split(separator: " ").map { Int(String($0))! }
-    graph[input[0]]?.append(input[1])
-    graph[input[1]]?.append(input[0])
-}
-
-var result: Int = 0
-for i in 1...edges {
-    if visitNode.contains(i) {
-        continue
-    }
-    
+var visited: [Bool] = Array(repeating: false, count: n + 1)
+var result = 0
+for i in 1...n where !visited[i] {
     result += 1
+    visited[i] = true
     
-    needVisitNode.append(i)
-    while !needVisitNode.isEmpty {
-        let node = needVisitNode.popLast()!
-        if !visitNode.contains(node) {
-            visitNode.append(node)
-            needVisitNode.append(contentsOf: graph[node] ?? [])
+    var stack: [Int] = [i]
+    while !stack.isEmpty {
+        let node = stack.removeLast()
+        
+        for next in graph[node] ?? [] where !visited[next] {
+            visited[next] = true
+            stack.append(next)
         }
     }
 }

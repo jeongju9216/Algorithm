@@ -2,20 +2,19 @@
 //  main.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2022/03/23.
+//  Created by 유정주 on 2023/08/10.
 //
 
-//11053 가장 긴 증가하는 부분 수열
 import Foundation
 
-let input = Int(readLine()!)!
-let numbers: [Int] = readLine()!.split(separator: " ").map { Int(String($0))! }
+let n = Int(readLine()!)!
+let arr = readLine()!.split { $0 == " " }.map { Int(String($0))! }
 
-var dp: [Int] = Array(repeating: 1, count: input)
-for i in 0..<input {
+var dp: [Int] = Array(repeating: 1, count: n + 1)
+for i in 0..<n {
     for j in 0..<i {
-        if numbers[i] > numbers[j] && dp[i] < dp[j]+1 {
-            dp[i] = dp[j] + 1
+        if arr[i] > arr[j] {
+            dp[i] = max(dp[i], dp[j] + 1)
         }
     }
 }
