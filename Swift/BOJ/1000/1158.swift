@@ -7,26 +7,20 @@
 
 import Foundation
 
-let nk = readLine()!.components(separatedBy: " ").map { Int($0)! }
-let n = nk[0], k = nk[1]
+let nk = readLine()!.split { $0 == " " }.map { Int(String($0))! }
+let (n, k) = (nk[0], nk[1])
 
 var arr = Array(1...n)
+var index = 0
 var result: [Int] = []
 
-var index = 0
-for i in 0..<n {
+for _ in 0..<n {
     index += k-1
-    if index >= arr.count {
-        index %= arr.count
-    }
+    index %= arr.count
     
     result.append(arr[index])
     arr.remove(at: index)
 }
 
-var string = "<"
-for i in 0..<result.count-1 {
-    string += "\(result[i]), "
-}
-string += "\(result.last!)>"
-print(string)
+print("<" + result.map { String($0) }.joined(separator: ", ") + ">")
+
