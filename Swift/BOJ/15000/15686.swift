@@ -2,73 +2,59 @@
 //  15686.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/04/09.
+//  Created by 유정주 on 2023/08/17.
 //
 
 import Foundation
 
+//치킨집 좌표를 배열에 넣고
+//n개를 뽑아서
+//bfs 돌리면서 최소 거리를 찾는다
+
 typealias Point = (x: Int, y: Int)
 
-let nm = readLine()!.components(separatedBy: " ").map { Int($0)! }
-let n = nm[0], m = nm[1]
-var map: [[Int]] = []
-var houses: [Point] = []
+func chickenDistance(_ chickens: [Point]) -> Int {
+    return houses.reduce(0) { sum, house in
+        var minDist = Int.max
+        for chicken in chickens {
+            minDist = min(minDist, abs(house.x - chicken.x) + abs(house.y - chicken.y))
+        }
+        return sum + minDist
+    }
+}
+
+func backtracking(_ current: [Point], _ idx: Int) {
+    if current.count == m {
+        result = min(result, chickenDistance(current))
+        return
+    }
+    
+    for i in idx..<chickens.count where !visited[i] {
+        visited[i] = true
+        backtracking(current + [chickens[i]], i + 1)
+        visited[i] = false
+    }
+}
+
+let nm = readLine()!.split { $0 == " " }.map { Int(String($0))! }
+let (n, m) = (nm[0], nm[1])
 var chickens: [Point] = []
+var houses: [Point] = []
+
 for i in 0..<n {
-    map.append(readLine()!.components(separatedBy: " ").map { Int($0)! })
+    let input = readLine()!.split { $0 == " " }.map { Int(String($0))! }
     for j in 0..<n {
-        if map[i][j] == 1 {
+        if input[j] == 1 {
             houses.append((i, j))
-        } else if map[i][j] == 2 {
+        } else if input[j] == 2 {
             chickens.append((i, j))
         }
     }
 }
 
-
-//치킨집 폐업 여부
+var result = Int.max
 var visited: [Bool] = Array(repeating: false, count: chickens.count)
 
-func calDistance() -> Int {
-    var sum = 0
-    
-    for house in houses {
-        var d = Int.max
-        
-        //house에서 가장 가까운 치킨집을 구함
-        for j in 0..<chickens.count {
-            guard visited[j] else { continue }
-            
-            let d2 = abs(house.x - chickens[j].x) + abs(house.y - chickens[j].y)
-            
-            d = min(d, d2)
-        }
-        sum += d
-    }
-    
-    return sum
-}
+backtracking([], 0)
 
-func selectChicken(_ index: Int, _ count: Int) {
-    if count == m {
-        //m개를 폐업했을 때 거리 계산
-        result = min(result, calDistance())
-        return
-    }
-    
-    //폐업시킬 m개 선택
-    for i in index..<chickens.count {
-        if !visited[i] {
-            visited[i] = true
-            
-            selectChicken(i, count + 1)
-            
-            visited[i] = false
-        }
-    }
-}
-
-var result = Int.max
-
-selectChicken(0, 0)
 print(result)
