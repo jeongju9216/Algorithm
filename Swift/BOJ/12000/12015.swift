@@ -2,19 +2,17 @@
 //  main.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2022/03/24.
+//  Created by 유정주 on 2023/08/21.
 //
 
-//12015 가장 긴 증가하는 부분 수열2
 import Foundation
 
-func lowerBound(find: Int, numbers: [Int]) -> Int {
-    var start = 0, end = numbers.count - 1
-    var mid = (start + end) / 2
+func lowerbound(_ num: Int, _ arr: [Int]) -> Int {
+    var start = 0, end = arr.count - 1
     
     while start < end {
-        mid = (start + end) / 2
-        if numbers[mid] < find {
+        let mid = (start + end) / 2
+        if num > arr[mid] {
             start = mid + 1
         } else {
             end = mid
@@ -24,23 +22,18 @@ func lowerBound(find: Int, numbers: [Int]) -> Int {
     return end
 }
 
-let input = Int(readLine()!)!
+let n = Int(readLine()!)!
+let arr = readLine()!.split { $0 == " " }.map { Int(String($0))! }
 
-var numbers: [Int] = readLine()!.split(separator: " ").map { Int(String($0))! }
-
-var dp: [Int] = []
-for number in numbers {
-    if dp.isEmpty {
-        dp.append(number)
-        continue
-    }
-    
-    if dp[dp.count - 1] < number {
-        dp.append(number)
+var result: [Int] = []
+for num in arr {
+    if result.isEmpty || result.last! < num {
+        result.append(num)
     } else {
-        let index = lowerBound(find: number, numbers: dp)
-        dp[index] = number
+        //num 이상의 값 중 가장 가까운 값
+        let index = lowerbound(num, result)
+        result[index] = num
     }
 }
 
-print(dp.count)
+print(result.count)
