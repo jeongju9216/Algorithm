@@ -2,45 +2,40 @@
 //  main.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2022/05/20.
+//  Created by 유정주 on 2023/08/20.
 //
 
 import Foundation
 
-let input = Array(readLine()!).map { String($0) }
-var result: [String] = []
+let arr = readLine()!.map { String($0) }
 
-//A*(B+C)
-//A+B*C
-//A+B
-//A+B*C-D/E
-let operations: [String: Int] = ["+": 1, "-": 1, "*": 2, "/": 2]
+let dict: [String: Int] = ["+": 1, "-": 1, "*": 2, "/": 2]
+var result: [String] = []
 var stack: [String] = []
-for char in input {
-    if char == "(" {
-        stack.append(char)
-    } else if char == ")" {
-        while let top = stack.last, top != "(" {
+for str in arr {
+    if str == "(" {
+        stack.append(str)
+    } else if str == ")" {
+        while let top = stack.popLast(), top != "(" {
             result.append(top)
-            stack.removeLast()
         }
-        stack.popLast()
+    } else if let priority = dict[str] {
+        //연산자
+        //(가 아닌 글자가 pop되는걸 방지하기 위해 last로 체크
+        while let top = stack.last, top != "(" {
+            guard let topPriority = dict[top], topPriority >= priority else { break }
+            //같거나 더 높은 우선순위면 result에 추가
+            result.append(stack.removeLast())
+        }
+        stack.append(str)
     } else {
-        if let priority = operations[char] { //연산자
-            while let top = stack.last, top != "(" {
-                guard let topPriority = operations[top], topPriority >= priority else { break }
-                result.append(stack.popLast()!)
-            }
-            stack.append(char)
-        } else { //알파벳
-            result.append(char)
-        }
+        //알파벳
+        result.append(str)
     }
 }
 
 if !stack.isEmpty {
-    result.append(contentsOf: stack.reversed())
+    result += stack.reversed()
 }
-result = result.filter { $0 != "(" && $0 != ")" }
 
 print(result.joined())
