@@ -2,35 +2,31 @@
 //  main.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2022/03/18.
+//  Created by 유정주 on 2023/08/23.
 //
 
-//10844 쉬운 계단 수
 import Foundation
 
-let MOD = 1000000000
+let MOD = 1_000_000_000
+let n = Int(readLine()!)!
 
-let input = Int(readLine()!)!
-var dp: [[Int]] = Array(repeating: [], count: input+1)
-
-dp[1].append(0)
-for _ in 1...9 {
-    dp[1].append(1)
+var dp: [[Int]] = Array(repeating: Array(repeating: 0, count: 10), count: n + 1)
+for i in 1...9 {
+    dp[1][i] = 1
 }
 
-if input >= 2 {
-    for i in 2...input {
+if n > 1 {
+    for i in 2...n {
         for j in 0...9 {
-            switch j {
-            case 0:
-                dp[i].append(dp[i-1][j+1] % MOD)
-            case 9:
-                dp[i].append(dp[i-1][j-1] % MOD)
-            default:
-                dp[i].append((dp[i-1][j-1] + dp[i-1][j+1]) % MOD)
+            if j == 0 {
+                dp[i][j] = dp[i-1][j+1] % MOD
+            } else if j == 9 {
+                dp[i][j] = dp[i-1][j-1] % MOD
+            } else {
+                dp[i][j] = dp[i-1][j+1] % MOD + dp[i-1][j-1] % MOD
             }
         }
     }
 }
 
-print(dp[input].reduce(0) { ($0 + $1) % MOD })
+print(dp[n].reduce(0) { ($0 + $1) % MOD })
