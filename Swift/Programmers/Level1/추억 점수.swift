@@ -2,7 +2,7 @@
 //  추억 점수.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/04/13.
+//  Created by 유정주 on 2023/08/31.
 //
 
 import Foundation
@@ -14,11 +14,8 @@ func solution(_ name:[String], _ yearning:[Int], _ photo:[[String]]) -> [Int] {
         dict[name[i]] = yearning[i]
     }
     
-    var result: [Int] = []
-    for pt in photo {
-        var sum = 0
-        pt.forEach { sum += dict[$0] ?? 0 }
-        result.append(sum)
+    let result: [Int] = photo.map {
+        $0.reduce(0) { $0 + (dict[$1] ?? 0) }
     }
     
     return result
