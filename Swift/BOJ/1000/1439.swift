@@ -2,7 +2,7 @@
 //  1439.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/05/17.
+//  Created by 유정주 on 2023/09/27.
 //
 
 import Foundation
