@@ -2,27 +2,24 @@
 //  숫자_변환하기.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/03/15.
+//  Created by 유정주 on 2024/04/25.
 //
 
 import Foundation
 
-func solution(_ x:Int, _ y:Int, _ n:Int) -> Int {
+func solution(_ x: Int, _ y: Int, _ n: Int) -> Int {
     
     var queue: [(Int, Int)] = [(y, 0)]
     var index = 0
     var visited: Set<Int> = []
     
-    var minCount = Int.max
+    var result = Int.max
     while index < queue.count {
-        let node = queue[index]
+        let (number, count) = queue[index]
         index += 1
         
-        let number = node.0
-        let count = node.1
-                
         if number == x {
-            minCount = min(minCount, count)
+            result = min(result, count)
             break
         } else if number < x {
             continue
@@ -43,5 +40,5 @@ func solution(_ x:Int, _ y:Int, _ n:Int) -> Int {
         visited.insert(number)
     }
     
-    return minCount == Int.max ? -1 : minCount
+    return result == Int.max ? -1 : result
 }
