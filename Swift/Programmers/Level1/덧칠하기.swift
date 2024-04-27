@@ -2,7 +2,7 @@
 //  덧칠하기.swift
 //  SwiftAlgorithm
 //
-//  Created by 유정주 on 2023/04/13.
+//  Created by 유정주 on 2024/04/27.
 //
 
 import Foundation
@@ -13,9 +13,7 @@ func solution(_ n:Int, _ m:Int, _ section:[Int]) -> Int {
     }
     
     var visited: [Bool] = Array(repeating: true, count: n + 1)
-    for num in section {
-        visited[num] = false
-    }
+    section.forEach { visited[$0] = false }
     
     var result = 0
     var index = 1
